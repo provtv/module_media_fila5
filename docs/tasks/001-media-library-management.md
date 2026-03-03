@@ -243,6 +243,5 @@ The Media module needs a robust media management system for handling images, vid
 
 ---
 
-**Created**: 2026-01-31
 **Status**: Pending
 **Assignee**: TBD

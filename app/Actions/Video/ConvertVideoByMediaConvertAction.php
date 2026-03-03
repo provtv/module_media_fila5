@@ -54,6 +54,7 @@ class ConvertVideoByMediaConvertAction
             })
             ->addFilter('-preset', 'ultrafast')
             // Utilizziamo il formato istanziato come parametro
+            // @phpstan-ignore-next-line method.notFound
             ->save($file_new, $formatInstance);
 
         $record->update([
