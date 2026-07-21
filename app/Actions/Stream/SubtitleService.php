@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Media\Actions\Stream;
+namespace Modules\Media\Services;
 
 use Exception;
 use Illuminate\Database\Eloquent\Model;
