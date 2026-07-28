@@ -9,7 +9,10 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Media\Providers\MediaServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Providers\XotServiceProvider;
+<<<<<<< HEAD
 use Modules\Media\Tests\Support\HasMediaTestStub;
+=======
+>>>>>>> f6dc2a0 (.)
 use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
@@ -44,6 +47,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * Mock HasMedia con metodo update (persistenza path allegati).
      *
      * @return HasMediaTestStub&\PHPUnit\Framework\MockObject\MockObject
@@ -54,6 +58,8 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+=======
+>>>>>>> f6dc2a0 (.)
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array

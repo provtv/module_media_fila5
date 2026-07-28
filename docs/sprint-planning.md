@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Sprint Planning: Media Module"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "sprint planning"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Sprint Planning: Media Module
 
 ## 🏁 Sprint Goal

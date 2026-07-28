@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Html2Pdf - Panoramica e Installazione"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "index"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Html2Pdf - Panoramica e Installazione
 
 Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e l'architettura di integrazione nel progetto.

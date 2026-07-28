@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Bad Practices – Media Module"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "bad practices"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Bad Practices – Media Module
 
 - ❌ **VIOLATE** SVG asset location rule (see `svg-asset-location.md`) using invalid paths
@@ -24,4 +27,8 @@ related:
 
 // ✅ CORRECT: SVG in standard location
 @svg('map-marker.svg')
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> f6dc2a0 (.)

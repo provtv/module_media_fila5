@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "metodi duplicati analisi"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨

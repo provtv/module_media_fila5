@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Aumentare Copertura Test - Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "task aumentare copertura test"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Task: Aumentare Copertura Test - Media
 
 **Modulo**: Media

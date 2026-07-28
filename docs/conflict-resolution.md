@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Conflict Resolution — Module Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "conflict resolution"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Conflict Resolution — Module Media
 
 ## Summary

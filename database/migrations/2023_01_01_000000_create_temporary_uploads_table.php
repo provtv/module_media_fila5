@@ -3,12 +3,24 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 use Modules\Media\Models\TemporaryUpload;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
     protected ?string $model_class = TemporaryUpload::class;
+=======
+// ---- models ---
+
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+/*
+ * Class CreateTemporaryUploadsTable.
+ */
+return new class extends XotBaseMigration
+{
+>>>>>>> f6dc2a0 (.)
     /**
      * Run the migrations.
      */
@@ -18,6 +30,7 @@ return new class extends XotBaseMigration
         $this->tableCreate(function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->string('session_id');
+<<<<<<< HEAD
         });
 
         // -- UPDATE: upload metadata columns (guarded so pre-existing installs get them too) --
@@ -40,6 +53,15 @@ return new class extends XotBaseMigration
         });
 
         // -- UPDATE: audit timestamps --
+=======
+            $table->uuid('user_id')->nullable();
+            $table->string('file_name');
+            $table->integer('file_size')->nullable();
+            $table->string('mime_type')->nullable();
+            $table->string('status')->default('uploading');
+        });
+        // -- UPDATE --
+>>>>>>> f6dc2a0 (.)
         $this->tableUpdate(function (Blueprint $table): void {
             $this->updateTimestamps(
                 table: $table,

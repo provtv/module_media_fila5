@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Troubleshooting"
 module: "Media"
@@ -9,4 +10,6 @@ qmd: "troubleshooting"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Troubleshooting

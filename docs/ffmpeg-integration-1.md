@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione di FFmpeg nel Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "ffmpeg integration 1"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Integrazione di FFmpeg nel Modulo Media
 
 Questa guida documenta l'integrazione del pacchetto [protonemedia/laravel-ffmpeg](https://github.com/protonemedia/laravel-ffmpeg) all'interno del modulo Media, basandosi sulle seguenti risorse:

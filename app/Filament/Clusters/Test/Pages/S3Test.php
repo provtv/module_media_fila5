@@ -127,7 +127,12 @@ class S3Test extends XotBasePage
      */
     protected function fillForms(): void
     {
+<<<<<<< HEAD
         $this->getForm('form')?->fill([
+=======
+        /** @phpstan-ignore-next-line */
+        $this->form->fill([
+>>>>>>> f6dc2a0 (.)
             'debug_output' => $this->getDebugOutput(),
         ]);
     }
@@ -231,7 +236,12 @@ class S3Test extends XotBasePage
 
     public function test01(): void
     {
+<<<<<<< HEAD
         $formState = $this->getForm('form')?->getState() ?? [];
+=======
+        /** @phpstan-ignore-next-line */
+        $formState = $this->form->getState();
+>>>>>>> f6dc2a0 (.)
         Assert::isArray($formState, 'Form state must be array');
         $data = $formState;
         $filePath = $data['attachment'] ?? null;
@@ -622,7 +632,12 @@ class S3Test extends XotBasePage
     public function sendEmail(): void
     {
         try {
+<<<<<<< HEAD
             $formState = $this->getForm('form')?->getState() ?? [];
+=======
+            /** @phpstan-ignore-next-line */
+            $formState = $this->form->getState();
+>>>>>>> f6dc2a0 (.)
             Assert::isArray($formState, 'Form state must be array');
             $data = $formState;
             $filePath = $data['attachment'] ?? null;
@@ -746,7 +761,12 @@ class S3Test extends XotBasePage
      */
     private function updateDebugOutput(): void
     {
+<<<<<<< HEAD
         $this->getForm('form')?->fill([
+=======
+        /** @phpstan-ignore-next-line */
+        $this->form->fill([
+>>>>>>> f6dc2a0 (.)
             'debug_output' => $this->getDebugOutput(),
         ]);
     }
@@ -769,7 +789,12 @@ class S3Test extends XotBasePage
             $s3Disk = Storage::disk('s3');
             $temporaryUrl = $s3Disk->temporaryUrl($filename, now()->addMinutes(5));
 
+<<<<<<< HEAD
             $formState = $this->getForm('form')?->getState() ?? [];
+=======
+            /** @phpstan-ignore-next-line */
+            $formState = $this->form->getState();
+>>>>>>> f6dc2a0 (.)
             Assert::isArray($formState, 'Form state must be array');
             $data = $formState;
             $filePath = $data['attachment'] ?? null;

@@ -14,7 +14,10 @@ use League\Flysystem\UnableToCheckFileExistence;
 use Throwable;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 // phpmd: TooManyFields, TooManyPublicMethods, ExcessiveClassComplexity, LongVariable — entry video Filament ricca
+=======
+>>>>>>> f6dc2a0 (.)
 class VideoEntry extends Entry
 {
     /**

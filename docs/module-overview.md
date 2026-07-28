@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media module overview"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "module overview"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media module overview
 
 ## Scopo ("perché esiste")

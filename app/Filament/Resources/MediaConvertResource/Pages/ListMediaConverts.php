@@ -14,6 +14,10 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
+<<<<<<< HEAD
+=======
+use Modules\Job\Filament\Widgets\ClockWidget;
+>>>>>>> f6dc2a0 (.)
 use Modules\Media\Actions\Video\ConvertVideoByMediaConvertAction;
 use Modules\Media\Datas\ConvertData;
 use Modules\Media\Filament\Resources\MediaConvertResource;
@@ -108,6 +112,12 @@ class ListMediaConverts extends XotBaseListRecords
      */
     protected function getHeaderWidgets(): array
     {
+<<<<<<< HEAD
         return [];
+=======
+        return [
+            ClockWidget::class,
+        ];
+>>>>>>> f6dc2a0 (.)
     }
 }

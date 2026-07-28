@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PRD: Media Module"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "prd"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # PRD: Media Module
 
 ## 📋 Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "BMAD Method v6.3 operativo nel progetto"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "bmad method"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # BMAD Method v6.3 operativo nel progetto
 
 ## Regola pratica

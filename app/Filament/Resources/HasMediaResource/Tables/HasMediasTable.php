@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources\HasMediaResource\Tables;
 
+<<<<<<< HEAD
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> f6dc2a0 (.)
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 

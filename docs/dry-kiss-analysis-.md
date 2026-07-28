@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "dry kiss analysis "
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # DRY & KISS Analysis - Modulo Media
 
 **Data:** 15 Ottobre 2025

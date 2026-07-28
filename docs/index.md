@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Indice della Documentazione - Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "index"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Indice della Documentazione - Modulo Media
 
 ## Panoramica
@@ -40,7 +43,11 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 ## Categorie Principali
 
 ### Architettura e Struttura
+<<<<<<< HEAD
 - [README](README.md) - Panoramica generale del modulo
+=======
+- [README](./readme.md) - Panoramica generale del modulo
+>>>>>>> f6dc2a0 (.)
 - [Architettura](./architecture/readme.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./data-models.md) - Documentazione dei modelli Eloquent

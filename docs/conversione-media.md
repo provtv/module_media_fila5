@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Conversione Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "conversione media"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Conversione Media
 
 ## Risorse Utili

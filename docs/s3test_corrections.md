@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni S3Test.php - Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "s3test corrections"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Correzioni S3Test.php - Modulo Media
 
 ## Problemi Identificati e Risolti

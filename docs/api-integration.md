@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "API Integration"
 module: "Media"
@@ -9,4 +10,6 @@ qmd: "api integration"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # API Integration

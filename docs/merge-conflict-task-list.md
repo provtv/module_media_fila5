@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Documentation Merge Conflict Task List"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "merge conflict task list"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Documentation Merge Conflict Task List
 
 ## INCOMPLETE (3 DOCS)
@@ -25,4 +28,8 @@ related:
 - [x] `Modules/Fixcity/docs/docs/INDEX.md` - Added DRY/KISS requirements
 
 ## BOUNDARY CASES (0)
+<<<<<<< HEAD
 - [ ] No boundary cases detected
+=======
+- [ ] No boundary cases detected
+>>>>>>> f6dc2a0 (.)

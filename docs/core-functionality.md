@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Core Functionality"
 module: "Media"
@@ -9,4 +10,6 @@ qmd: "core functionality"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Core Functionality

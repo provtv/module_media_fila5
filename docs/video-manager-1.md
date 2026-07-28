@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Video Manager 1"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "video manager 1"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 https://github.com/amitavroy/MyVideoManager
 
 ### Versione HEAD

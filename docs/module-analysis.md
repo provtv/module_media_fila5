@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module - Comprehensive Analysis"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "module analysis"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media Module - Comprehensive Analysis
 
 ## Module Overview
@@ -103,4 +106,8 @@ The Media module provides comprehensive media file management:
 - Bulk operations
 - Advanced search
 - Metadata management
+<<<<<<< HEAD
 - Performance optimization
+=======
+- Performance optimization
+>>>>>>> f6dc2a0 (.)

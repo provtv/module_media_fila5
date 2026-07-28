@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Product Requirements Document (PRD)"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "product requirements"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Product Requirements Document (PRD)
 
 ## Metadata

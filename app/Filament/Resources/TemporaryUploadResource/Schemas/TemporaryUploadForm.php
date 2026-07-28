@@ -25,5 +25,9 @@ class TemporaryUploadForm extends XotBaseResourceForm
             'folder' => TextInput::make('folder')->required()->maxLength(255),
             'expires_at' => DateTimePicker::make('expires_at')->required(),
         ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6dc2a0 (.)
     }
 }

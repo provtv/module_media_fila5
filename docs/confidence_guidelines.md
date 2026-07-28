@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Massimizzare il livello di confidenza"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "confidence guidelines"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

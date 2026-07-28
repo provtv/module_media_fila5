@@ -172,6 +172,7 @@ lang/lang/
 _docs/
 _docs/
 agentdb.rvf
+<<<<<<< HEAD
 docs/archive/
 .devcontainer/
 .vscode/
@@ -180,3 +181,5 @@ docs/legacy
 
 # Local vector DB (agent tooling)
 ruvector.db
+=======
+>>>>>>> f6dc2a0 (.)

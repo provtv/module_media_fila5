@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Codex Configuration Error Fixes"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "codex error fix"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Codex Configuration Error Fixes
 
 Questo documento descrive le correzioni applicate agli errori riscontrati durante l'avvio di `codex`.
