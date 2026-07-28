@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_O9Wm0D
-=======
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cc5db029b8916fa37b18d00b81c475ab972196ea31268178a53ed473366ab45
-size 2920
-=======
->>>>>>> .merge_file_MdpNZM
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" 
      fill="none" 
@@ -92,7 +84,3 @@ size 2920
     <rect x="6" y="20" width="12" height="0.5" rx="0.25" fill="currentColor" opacity="0.3" />
     <rect x="6" y="20" width="4" height="0.5" rx="0.25" fill="currentColor" opacity="0.8" />
 </svg>
-<<<<<<< .merge_file_O9Wm0D
-=======
->>>>>>> f6dc2a0 (.)
->>>>>>> .merge_file_MdpNZM
