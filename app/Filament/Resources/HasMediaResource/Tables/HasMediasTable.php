@@ -4,7 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources\HasMediaResource\Tables;
 
+<<<<<<< .merge_file_utyohD
 use Filament\Tables\Columns\Column;
+=======
+<<<<<<< HEAD
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_Yo3PNW
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 

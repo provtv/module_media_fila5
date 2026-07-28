@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing in Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "testing"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Testing in Media
 
 Questo componente segue lo standard globale di progetto per il testing.

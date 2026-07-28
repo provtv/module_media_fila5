@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Collegamento alle Traduzioni del Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "lang link"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Collegamento alle Traduzioni del Modulo Media
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

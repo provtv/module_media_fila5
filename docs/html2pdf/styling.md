@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Guida agli Stili, Tabelle e Immagini"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "styling"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.

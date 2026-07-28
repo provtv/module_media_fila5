@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_rna5b2
+=======
+<<<<<<< HEAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:e54d1ce619eb04fa0885c4b1e81adcf89fe0c55ec6067b0e56f24ac96e73f554
+size 1027
+=======
+>>>>>>> .merge_file_SCXg7t
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g>
@@ -13,3 +21,7 @@
         </circle>
     </g>
 </svg>
+<<<<<<< .merge_file_rna5b2
+=======
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_SCXg7t

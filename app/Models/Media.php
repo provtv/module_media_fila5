@@ -107,7 +107,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @method static Builder|Media whereUuid($value)
  * @method static Builder|Media whereWidth($value)
  * @method static MediaFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_YUyV24
  *
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_35xiVw
  * @property-read mixed $extension
  * @property-read mixed $human_readable_size
  * @property-read mixed $original_url
@@ -117,11 +121,21 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @method static MediaCollection<int, static> get($columns = ['*'])
  *
  * @mixin Eloquent
+=======
+>>>>>>> f6dc2a0 (.)
  */
 class Media extends SpatieMedia
 {
+<<<<<<< .merge_file_YUyV24
     /** @use HasXotFactory<MediaFactory> */
     /** @phpstan-use HasXotFactory<Factory<static>> */
+=======
+    /** @use HasXotFactory<\Modules\Media\Database\Factories\MediaFactory> */
+<<<<<<< HEAD
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+=======
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_35xiVw
     use HasXotFactory;
 
     use Updater;

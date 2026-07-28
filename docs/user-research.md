@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Research: Media Module"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "user research"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # User Research: Media Module
 
 ## 🔬 Research Goals

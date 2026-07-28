@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "youtube"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "youtube"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # youtube
 
 <!-- Contenuto migrato da _docs/youtube.txt -->

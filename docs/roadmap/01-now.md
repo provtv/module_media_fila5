@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Now (Module Media)"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "01 now"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Now (Module Media)
 
 ## Stabilization

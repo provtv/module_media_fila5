@@ -14,7 +14,11 @@ jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - uses: actions/checkout@v7
+=======
+      - uses: actions/checkout@v4
+>>>>>>> f6dc2a0 (.)
         with:
           fetch-depth: 0
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Player"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "player"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 https://github.com/spatie/laravel-sitemap/blob/main/resources/views/video.blade.php
 
 https://github.com/anggadarkprince/beats-laravel-web/blob/master/resources/views/pages/video.blade.php

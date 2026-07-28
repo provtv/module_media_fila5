@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "folio volt best practices"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview

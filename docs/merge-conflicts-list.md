@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Merge conflict markers — file list"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "merge conflicts list"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Merge conflict markers — file list
 
 Elenco dei file trovati contenenti marker di merge (<<<<<<<, >>>>>>>, .merge_file). Seguire la lista per assegnare task agli agenti.

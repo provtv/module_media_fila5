@@ -7,11 +7,26 @@ namespace Modules\Media\Datas;
 use Illuminate\Support\Facades\Config;
 use Livewire\Wireable;
 use RuntimeException;
+<<<<<<< .merge_file_hpYG56
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
+=======
+<<<<<<< HEAD
+use function Safe\file_get_contents;
+use Spatie\LaravelData\Concerns\WireableData;
+use Spatie\LaravelData\Data;
+
+=======
+use Spatie\LaravelData\Concerns\WireableData;
+use Spatie\LaravelData\Data;
+
+use function Safe\file_get_contents;
+
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_YsvRUZ
 class CloudFrontData extends Data implements Wireable
 {
     use WireableData;

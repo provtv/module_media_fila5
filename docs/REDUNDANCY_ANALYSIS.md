@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "REDUNDANCY ANALYSIS"
 module: "Media"
@@ -9,4 +10,6 @@ qmd: "redundancy analysis"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 Redundancy analysis available: docs/analysis/redundancies/summary.md

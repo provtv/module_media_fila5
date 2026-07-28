@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media - Product Strategy"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "product strategy"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media - Product Strategy
 
 > Strategia prodotto. Modulo.

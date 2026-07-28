@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Custom Properties — spatie/laravel-medialibrary"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "custom properties guide"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Custom Properties — spatie/laravel-medialibrary
 
 **Package**: [`spatie/laravel-medialibrary`](https://spatie.be/docs/laravel-medialibrary/v11/advanced-usage/using-custom-properties)

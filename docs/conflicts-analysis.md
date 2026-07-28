@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Conflitti - README.md"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "conflicts analysis"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Analisi Conflitti - README.md
 
 ## Obiettivi Funzionali

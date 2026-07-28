@@ -20,7 +20,11 @@ jobs:
 
     steps:
       - name: Checkout code
+<<<<<<< HEAD
         uses: actions/checkout@v7
+=======
+        uses: actions/checkout@v4
+>>>>>>> f6dc2a0 (.)
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Convenzioni per le Table Actions in Filament"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "filament table actions"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Convenzioni per le Table Actions in Filament
 
 ## Regola Fondamentale

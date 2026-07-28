@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "False Friends – Media Module"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "false friends"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # False Friends – Media Module
 
 | Concept | Misconception | Correction |
@@ -37,4 +40,12 @@ const iconUrl = 'https://unpkg.com/leaflet@1.9.4/dist/marker-icon.png';
 ```blade
 {{-- ✅ CORRECT - Standard approach --}}
 @svg('map-marker.svg', ['class' => 'map-marker'])
+<<<<<<< .merge_file_chWMUd
 ```
+=======
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_eApCYz

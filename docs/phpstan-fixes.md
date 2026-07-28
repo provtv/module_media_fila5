@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan Livello 7 - Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "phpstan fixes"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Correzioni PHPStan Livello 7 - Modulo Media
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Media e le relative soluzioni implementate.
@@ -90,6 +93,7 @@ protected function getHeaderActions(): array
 
 **bootstrap:** corretto anche `Lang/TranslationFileForm::getFormSchema()` da istanza a `static` (fatal al caricamento classi).
 
+<<<<<<< HEAD
 ## session3 (2026-07-15) — 5 file, 32 errori → 0
 
 | file | pattern |
@@ -102,3 +106,6 @@ protected function getHeaderActions(): array
 Dettaglio: [wiki/troubleshooting/phpstan-fixes.md](./wiki/troubleshooting/phpstan-fixes.md) · handoff [docs/chat/phpstan-media-session3-findings.md](../../../docs/chat/phpstan-media-session3-findings.md)
 
 *ultimo aggiornamento: 2026-07-15*
+=======
+*ultimo aggiornamento: 2026-05-21*
+>>>>>>> f6dc2a0 (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti per l'Integrazione FFmpeg nel Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "risoluzione conflitti ffmpeg"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Risoluzione Conflitti per l'Integrazione FFmpeg nel Modulo Media
 
 ## Panoramica

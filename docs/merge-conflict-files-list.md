@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Merge Conflict Files List"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "merge conflict files list"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Merge Conflict Files List
 
 This file contains a comprehensive list of files with merge conflict markers (`<<<< HEAD` or `<<<< .merge_file`) that need to be resolved.
@@ -90,4 +93,12 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 ---
 *Generated on: $(date)
 *Total files: 96
+<<<<<<< .merge_file_F1I4eX
 *Status: Pending resolution*
+=======
+<<<<<<< HEAD
+*Status: Pending resolution*
+=======
+*Status: Pending resolution*
+>>>>>>> f6dc2a0 (.)
+>>>>>>> .merge_file_nopSdx

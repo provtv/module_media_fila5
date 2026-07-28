@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media - Filosofia Completa: Logica, Religione, Politica, Zen"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "philosophy complete"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]

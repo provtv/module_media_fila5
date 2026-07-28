@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Rules Summary"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "testing rules"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

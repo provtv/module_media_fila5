@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitto in VideoEntry"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "resolution conflitti video entry"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Risoluzione Conflitto in VideoEntry
 
 ## Panoramica

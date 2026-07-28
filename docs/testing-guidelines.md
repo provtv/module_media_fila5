@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module - Testing Guidelines"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "testing guidelines"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media Module - Testing Guidelines
 
 ## Testing Framework Requirements
