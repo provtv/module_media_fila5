@@ -6,9 +6,10 @@ namespace Modules\Media\Actions\Diagnostic\S3;
 
 use Aws\Exception\AwsException;
 use Modules\Media\Actions\Diagnostic\Support\CreateFilesystemS3ClientAction;
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\json_decode;
 use function Safe\json_encode;
-use Spatie\QueueableAction\QueueableAction;
 
 class CheckBucketPolicyAction
 {

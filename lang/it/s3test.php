@@ -64,11 +64,15 @@ return [
             'label' => 'Allegato',
             'placeholder' => 'Seleziona un file da allegare',
             'helper_text' => 'File di test per verificare le operazioni S3',
+            'tooltip' => '',
+            'description' => '',
         ],
         'debug_output' => [
             'label' => 'Output Debug',
             'placeholder' => 'I risultati dei test appariranno qui',
             'helper_text' => 'Output dettagliato dei test eseguiti',
+            'tooltip' => '',
+            'description' => '',
         ],
     ],
     'messages' => [
@@ -96,5 +100,18 @@ return [
         'check_permissions' => 'Verifica i permessi IAM per S3',
         'check_cloudfront_config' => 'Verifica la configurazione CloudFront',
         'contact_admin' => 'Contatta l\'amministratore del sistema',
+    ],
+    'label' => 'S3test',
+    'plural_label' => 'S3test (Plurale)',
+    'navigation' => [
+        'name' => 'S3test',
+        'plural' => 'S3test',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'S3test',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
     ],
 ];

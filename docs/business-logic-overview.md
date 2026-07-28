@@ -1,3 +1,14 @@
+---
+title: "Media Module - Business Logic Overview"
+module: "Media"
+type: concept
+tags: [business, logic, overview]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "business logic overview"
+related:
+  - "./webm.md"
+---
 # Media Module - Business Logic Overview
 
 ## Core Business Logic Components
@@ -187,6 +198,6 @@ $document = PatientDocument::getSecureDocument(
 
 ---
 
-**Last Updated**: 2025-08-28
+
 **Module Version**: Latest
 **Business Logic Status**: Core functionality implemented

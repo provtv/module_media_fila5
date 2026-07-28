@@ -1,5 +1,7 @@
-# _competitors
+---
+module: theme
+topic: _competitors
+canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
+---
 
-<!-- Contenuto migrato da _docs/_competitors.txt -->
-
-https://github.com/outer-web/filament-image-library
+See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules

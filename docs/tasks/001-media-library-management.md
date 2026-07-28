@@ -1,3 +1,14 @@
+---
+title: "Task 001: Implement Media Library Management System"
+module: "Media"
+type: concept
+tags: [001, media, library, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "001 media library management"
+related:
+  - "./webm.md"
+---
 # Task 001: Implement Media Library Management System
 
 ## Description
@@ -243,6 +254,5 @@ The Media module needs a robust media management system for handling images, vid
 
 ---
 
-**Created**: 2026-01-31
 **Status**: Pending
 **Assignee**: TBD

@@ -14,6 +14,7 @@ return [
                 'mimes' => 'Il file deve essere un documento PDF o un\'immagine',
                 'max' => 'La dimensione massima del file è 10MB',
             ],
+            'tooltip' => '',
         ],
         'prescription' => [
             'label' => 'Ricetta Medica',
@@ -25,6 +26,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'medical_report' => [
             'label' => 'Referto Medico',
@@ -35,6 +37,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'certificate' => [
             'label' => 'Certificato1',
@@ -45,6 +48,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, JPG, PNG',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'consent_form' => [
             'label' => 'Modulo di Consenso',
@@ -55,6 +59,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'xray_image' => [
             'label' => 'Immagine Radiografica',
@@ -65,6 +70,7 @@ return [
                 'mimes' => 'Formati supportati: JPG, PNG, DICOM',
                 'max' => 'Dimensione massima: 20MB',
             ],
+            'tooltip' => '',
         ],
         'treatment_plan' => [
             'label' => 'Piano di Trattamento',
@@ -75,6 +81,7 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'medical_history' => [
             'label' => 'Storia Clinica',
@@ -85,12 +92,14 @@ return [
                 'mimes' => 'Formati supportati: PDF, DOC, DOCX',
                 'max' => 'Dimensione massima: 10MB',
             ],
+            'tooltip' => '',
         ],
         'doctor_certificate' => [
             'description' => 'doctor_certificate',
             'helper_text' => 'doctor_certificate1',
             'label' => 'doctor_certificate',
             'placeholder' => 'doctor_certificate',
+            'tooltip' => '',
         ],
     ],
     'validation' => [
@@ -104,5 +113,29 @@ return [
         'upload_error' => 'Errore durante il caricamento del file',
         'delete_success' => 'File eliminato con successo',
         'delete_error' => 'Errore durante l\'eliminazione del file',
+    ],
+    'label' => 'Attachments Schema',
+    'plural_label' => 'Attachments Schema (Plurale)',
+    'navigation' => [
+        'name' => 'Attachments Schema',
+        'plural' => 'Attachments Schema',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Attachments Schema',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Attachments Schema',
+        ],
+        'edit' => [
+            'label' => 'Modifica Attachments Schema',
+        ],
+        'delete' => [
+            'label' => 'Elimina Attachments Schema',
+        ],
     ],
 ];

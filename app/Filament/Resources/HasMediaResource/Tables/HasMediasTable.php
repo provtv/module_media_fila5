@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Resources\HasMediaResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class HasMediasTable extends XotBaseResourceTable
 {
     /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
+     * @return array<int|string, Column>
      */
     public function getTableColumns(): array
     {

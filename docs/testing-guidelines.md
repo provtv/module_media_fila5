@@ -1,3 +1,14 @@
+---
+title: "Media Module - Testing Guidelines"
+module: "Media"
+type: how-to
+tags: [testing, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing guidelines"
+related:
+  - "./webm.md"
+---
 # Media Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -463,6 +474,6 @@ describe('Media Performance Tests', function () {
 
 ---
 
-**Last Updated**: 2025-08-28
+
 **Testing Framework**: Pest
 **Environment**: .env.testing

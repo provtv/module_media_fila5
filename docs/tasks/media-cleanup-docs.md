@@ -1,3 +1,14 @@
+---
+title: "Task: Media Docs Consolidation & Cleanup"
+module: "Media"
+type: concept
+tags: [media, cleanup, docs]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media cleanup docs"
+related:
+  - "./webm.md"
+---
 # Task: Media Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo

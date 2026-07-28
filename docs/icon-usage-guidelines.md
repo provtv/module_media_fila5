@@ -1,3 +1,14 @@
+---
+title: "Media Module Icon Usage Guidelines"
+module: "Media"
+type: how-to
+tags: [icon, usage, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "icon usage guidelines"
+related:
+  - "./webm.md"
+---
 # Media Module Icon Usage Guidelines
 
 ## File Location

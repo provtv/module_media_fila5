@@ -1,13 +1,28 @@
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive/
+docs/archive/**
+docs/archived
+docs/legacy
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
 # ==============================================
 # LARAXOT MODULE MEDIA - .GITIGNORE
-# ==============================================
 # Modulo Media Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-06
-# ==============================================
-
-# ==============================================
 # DEPENDENCIES & PACKAGES
-# ==============================================
 vendor/
 /vendor/
 node_modules/
@@ -17,20 +32,14 @@ package-lock.json
 yarn.lock
 yarn-error.log
 composer.lock
-
-# ==============================================
 # BUILD & COMPILED FILES
-# ==============================================
 /build
 /build/
 build/
 dist/
 docs/cache/
 cache/
-
-# ==============================================
 # CACHE & TEMPORARY FILES
-# ==============================================
 *.cache
 *.lock
 *.phar
@@ -44,20 +53,14 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-
-# ==============================================
 # LOG FILES
-# ==============================================
 *.log
 error_log
 npm-debug.log*
 npm-debug.log
 yarn-error.log*
 lerna-debug.log*
-
-# ==============================================
 # LARAVEL SPECIFIC
-# ==============================================
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -68,26 +71,17 @@ storage/*.key
 .env
 .env.*
 !.env.example
-
-# ==============================================
 # ENVIRONMENT & CONFIGURATION
-# ==============================================
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
-
-# ==============================================
 # GIT SPECIFIC
-# ==============================================
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
-
-# ==============================================
 # SYSTEM FILES
-# ==============================================
 .DS_Store
 .DS_Store?
 ._*
@@ -95,35 +89,24 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# ==============================================
 # BACKUP FILES
-# ==============================================
 *.old
 *.old1
 *.old2
 *.backup
 *.backup.*
+*.backup-*
+*.backup_*
 *.bak
 *.bakcup
 *.new
-
-# ==============================================
 # DEVELOPMENT TOOLS
-# ==============================================
 .windsurf/
 .cursor/
 .phpstorm.meta.php
-
-# ==============================================
 # DOCUMENTATION CACHE
-# ==============================================
 docs/phpstan/
-docs/cache/
-
-# ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
 resources/views/Components_old/
 resources/views/Components_old
 database/Migrations_old/
@@ -135,32 +118,38 @@ database/Factories_old
 database/Factories_
 database_old/
 database_old
-
-# ==============================================
 # MODULE SPECIFIC - MEDIA
-# ==============================================
 # File di configurazione locale
 config/local.php
 config/development.php
-
 # File media temporanei
 media/temp/
 media/uploads/temp/
 media/thumbnails/temp/
-
 # Cache media
 storage/media/
 storage/thumbnails/
-
 # File di test media
 media_test_data.json
 test_media_files/
-
-# ==============================================
 # END OF MEDIA .GITIGNORE
-# ==============================================
-
 # 🚫 File specifici del progetto
 *.fila2
 laravel
 public_html
+lang/lang/
+agentdb.rvf
+.vscode/
+tests/AuditCoverage
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+.cursor/
+.devcontainer/
+.vscode/
+.windsurf/
+tests/AuditCoverage/
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+phpinsights.php
+rector.php

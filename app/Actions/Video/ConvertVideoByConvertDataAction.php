@@ -38,22 +38,23 @@ class ConvertVideoByConvertDataAction
         }
 
         // Instanziamo il formato prima di usarlo
-        $formatInstance = new $format;
+        $formatInstance = new $format();
 
-        // @phpstan-ignore method.notFound
-        FFMpeg::fromDisk($data->disk)
+        $export = FFMpeg::fromDisk($data->disk)
             ->open($data->file)
             ->export()
             ->onProgress(function (float $percentage, float $remaining, float $rate): void {
-                // Gestione del progresso
-                $msg = "{$percentage}% transcoded";
-                $msg .= "{$remaining} seconds left at rate: {$rate}";
-
-                // Log o notifica del progresso
+                // Gestione del progresso (log o notifica non ancora implementati)
             })
-            ->addFilter('-preset', 'ultrafast')
             // Utilizziamo il formato istanziato come parametro
-            ->save($file_new, $formatInstance);
+            ->inFormat($formatInstance);
+
+        // addFilter() e' inoltrato al driver PHPFFMpeg via __call/@mixin: la sua
+        // firma dichiarata restituisce il tipo del driver, non del MediaExporter.
+        // Non lo si concatena per non perdere il tipo corretto di $export.
+        $export->addFilter('-preset', 'ultrafast');
+
+        $export->save($file_new);
 
         // Restituisci il percorso del file senza usare il metodo url()
         return $file_new;

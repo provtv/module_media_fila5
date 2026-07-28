@@ -1,3 +1,14 @@
+---
+title: "Dependency Intelligence - Module Media"
+module: "Media"
+type: concept
+tags: [dependency, intelligence]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dependency intelligence"
+related:
+  - "./webm.md"
+---
 # Dependency Intelligence - Module Media
 
 Aggiornato da `composer show` il 2026-03-02.

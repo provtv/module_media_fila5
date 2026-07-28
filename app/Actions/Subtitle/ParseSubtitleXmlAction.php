@@ -7,10 +7,11 @@ namespace Modules\Media\Actions\Subtitle;
 use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use function Safe\realpath;
-use function Safe\simplexml_load_string;
 use SimpleXMLElement;
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\realpath;
+use function Safe\simplexml_load_string;
 
 /**
  * Parses a subtitle file (currently only XML is supported) into structured

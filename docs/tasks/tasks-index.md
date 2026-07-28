@@ -1,3 +1,14 @@
+---
+title: "Indice task - Modulo Media"
+module: "Media"
+type: concept
+tags: [tasks, index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tasks index"
+related:
+  - "./webm.md"
+---
 # Indice task - Modulo Media
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Dettagli dalla [roadmap](../roadmap.md).
@@ -23,4 +34,4 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 ## Collegamenti
 
 - [Roadmap Media](../roadmap.md)
-- [Scopo moduli progetto](../../../../docs/moduli-scopo.md)
+- [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)

@@ -9,8 +9,13 @@ use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 
+// phpmd: UnusedFormalParameter — $disk riservato a future collection dedicate
 class GetAttachmentsSchemaAction
 {
+    /**
+     * @param  array<string>  $attachments
+     * @return array<FileUpload>
+     */
     public function execute(array $attachments, string $disk = 'attachments'): array
     {
         $form = [];

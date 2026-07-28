@@ -1,3 +1,14 @@
+---
+title: "Custom Properties — spatie/laravel-medialibrary"
+module: "Media"
+type: how-to
+tags: [custom, properties, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "custom properties guide"
+related:
+  - "./webm.md"
+---
 # Custom Properties — spatie/laravel-medialibrary
 
 **Package**: [`spatie/laravel-medialibrary`](https://spatie.be/docs/laravel-medialibrary/v11/advanced-usage/using-custom-properties)
@@ -111,4 +122,4 @@ assert(is_string($color));
 ## References
 
 - [Official Docs: Custom Properties](https://spatie.be/docs/laravel-medialibrary/v11/advanced-usage/using-custom-properties)
-- [Xot Schemaless Guide](../../Xot/docs/spatie-schemaless-attributes.md)
+- [Xot Schemaless Guide](../../xot/docs/spatie-schemaless-attributes.md)

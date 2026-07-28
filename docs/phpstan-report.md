@@ -1,3 +1,14 @@
+---
+title: "Report PHPStan - Modulo Media"
+module: "Media"
+type: concept
+tags: [phpstan, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan report"
+related:
+  - "./webm.md"
+---
 # Report PHPStan - Modulo Media
 
 ## Stato Attuale
@@ -56,8 +67,8 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Media. Questo Ã
 
    - Monitorare l'utilizzo dello storage
 ## Collegamenti tra versioni di phpstan_report.md
-* [phpstan_report.md](../../../Lang/docs/phpstan_report.md)
-* [phpstan_report.md](../../../Media/docs/phpstan_report.md)
+* [phpstan_report.md](../../../lang/docs/phpstan_report.md)
+* [phpstan_report.md](../../../media/docs/phpstan_report.md)
 
 ### Versione Incoming
 

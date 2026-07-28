@@ -1,3 +1,14 @@
+---
+title: "Ottimizzazioni Performance Modulo Media"
+module: "Media"
+type: concept
+tags: [media, optimizations, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media optimizations 1"
+related:
+  - "./webm.md"
+---
 # Ottimizzazioni Performance Modulo Media
 
 ## 1. Ottimizzazione Conversione Video

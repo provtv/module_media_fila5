@@ -1,3 +1,14 @@
+---
+title: "Convenzioni per le Table Actions in Filament"
+module: "Media"
+type: concept
+tags: [filament, table, actions, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament table actions 1"
+related:
+  - "./webm.md"
+---
 # Convenzioni per le Table Actions in Filament
 
 ## Regola Fondamentale

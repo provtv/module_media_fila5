@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 7 - Modulo Media"
+module: "Media"
+type: concept
+tags: [phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-15
+qmd: "phpstan fixes"
+related:
+  - "./webm.md"
+---
 # Correzioni PHPStan Livello 7 - Modulo Media
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Media e le relative soluzioni implementate.
@@ -63,3 +74,31 @@ protected function getHeaderActions(): array
 #### Benefici
 - Risoluzione dell'errore `return.type` per `getHeaderActions()`.
 - Migliore aderenza alle convenzioni di tipizzazione degli array associativi nei metodi Filament.
+
+## scan 2026-05-21 (livello max)
+
+**comando:** `cd laravel && ./vendor/bin/phpstan analyse Modules/Media --no-progress`  
+**esito:** 32 errori → 0
+
+| area | fix |
+|------|-----|
+| `Actions/Image/Merge.php` | Intervention Image **v4**: `decodePath()`, `createImage()`, `insert()` + `Alignment`; tipizzazione `ImageInterface` |
+| form/infolist Filament | PHPDoc `@return array<string, \Filament\Schemas\Components\Component>` (non `Forms\` / `Infolists\` namespace obsoleto) |
+| `*Table.php` | rimossi docblock duplicati con `int\|string` malformato; `@return array<string, Column>` |
+| `FileExtensionRule` | `@var list<string>` + `array_values()` su `array_map` |
+| `SubtitleService` | metodo privato `secondsToHms()` (prima chiamata a funzione globale inesistente) |
+
+**bootstrap:** corretto anche `Lang/TranslationFileForm::getFormSchema()` da istanza a `static` (fatal al caricamento classi).
+
+## session3 (2026-07-15) — 5 file, 32 errori → 0
+
+| file | pattern |
+|------|---------|
+| `Actions/Image/Merge.php` | Intervention v4 API + `ImageInterface` |
+| `Actions/Video/ConvertVideoBy*Action.php` | `addFilter()` fuori catena su `MediaExporter` |
+| `Filament/.../S3Test.php` | `getForm('form')` al posto di `$this->form` |
+| `Models/TemporaryUpload.php` | `class-string<Media>` dopo Assert su config |
+
+Dettaglio: [wiki/troubleshooting/phpstan-fixes.md](./wiki/troubleshooting/phpstan-fixes.md) · handoff [docs/chat/phpstan-media-session3-findings.md](../../../docs/chat/phpstan-media-session3-findings.md)
+
+*ultimo aggiornamento: 2026-07-15*

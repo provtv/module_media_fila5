@@ -1,3 +1,14 @@
+---
+title: "Laravel-FFMpeg – API Reference Completa"
+module: "Media"
+type: concept
+tags: [laravel, ffmpeg, api, reference]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel ffmpeg api reference"
+related:
+  - "./webm.md"
+---
 # Laravel-FFMpeg – API Reference Completa
 
 > Package: `protonemedia/laravel-ffmpeg` v8+

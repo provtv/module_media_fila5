@@ -1,3 +1,14 @@
+---
+title: "Task: Media Security and Access Control"
+module: "Media"
+type: concept
+tags: [media, security, access, control]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media security access control"
+related:
+  - "./webm.md"
+---
 # Task: Media Security and Access Control
 
 **Modulo**: Media  

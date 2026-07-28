@@ -1,3 +1,14 @@
+---
+title: "Regole di Naming per File"
+module: "Media"
+type: rule
+tags: [file, naming, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file naming rules"
+related:
+  - "./webm.md"
+---
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

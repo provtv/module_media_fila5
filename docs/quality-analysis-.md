@@ -1,3 +1,14 @@
+---
+title: "Quality Analysis Report - Media Module"
+module: "Media"
+type: concept
+tags: [quality, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality analysis "
+related:
+  - "./webm.md"
+---
 # Quality Analysis Report - Media Module
 **Date**: 2025-11-11
 **Status**: ✅ **ILLUMINATED** - PHPStan Level 10 PASS

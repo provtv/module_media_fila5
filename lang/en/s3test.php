@@ -64,11 +64,15 @@ return [
             'label' => 'Attachment',
             'placeholder' => 'Select a file to attach',
             'helper_text' => 'Test file to verify S3 operations',
+            'tooltip' => '',
+            'description' => '',
         ],
         'debug_output' => [
             'label' => 'Debug Output',
             'placeholder' => 'Test results will appear here',
             'helper_text' => 'Detailed output of executed tests',
+            'tooltip' => '',
+            'description' => '',
         ],
     ],
     'messages' => [
@@ -97,4 +101,13 @@ return [
         'check_cloudfront_config' => 'Check CloudFront configuration',
         'contact_admin' => 'Contact system administrator',
     ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
 ];

@@ -1,3 +1,14 @@
+---
+title: "S3Test.php - Analisi Refactoring e Regole di Conformità Laraxot"
+module: "Media"
+type: concept
+tags: [s3test, refactoring, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "s3test refactoring analysis"
+related:
+  - "./webm.md"
+---
 # S3Test.php - Analisi Refactoring e Regole di Conformità Laraxot
 
 ## 🚨 **PROBLEMATICHE IDENTIFICATE E RISOLTE**
@@ -128,10 +139,10 @@ protected function getFormSchema(): array
 
 ## 🔗 **Collegamenti Documentazione**
 
-- [Media Module README](../README.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-- [Translation Rules](../../../docs/translation-rules.md)
-- [PHPStan Guidelines](../../../docs/phpstan-guidelines.md)
+- [Media Module README](README.md)
+- [Filament Best Practices](../../../../docs/filament-best-practices.md)
+- [Translation Rules](../../../../docs/translation-rules.md)
+- [PHPStan Guidelines](../../../../docs/phpstan-guidelines.md)
 
 ## 📊 **Metriche Miglioramento**
 

@@ -18,12 +18,18 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  */
 abstract class HasMediaTestStub implements HasMedia
 {
-    /** @param  array<string, mixed>  $attributes */
+    /**
+     * @param  array<string, mixed>  $attributes
+     * @param  array<string, mixed>  $options
+     */
     public function update(array $attributes = [], array $options = []): bool
     {
         return true;
     }
 
+    /**
+     * @return MorphMany<Media, \Illuminate\Database\Eloquent\Model>
+     */
     public function media(): MorphMany
     {
         throw new \BadMethodCallException(__METHOD__);
@@ -44,9 +50,13 @@ abstract class HasMediaTestStub implements HasMedia
         return false;
     }
 
+    /**
+     * @param  callable|array<string, mixed>  $filters
+     * @return Collection<int, Media>
+     */
     public function getMedia(string $collectionName = 'default', callable|array $filters = []): Collection
     {
-        return collect();
+        return new Collection();
     }
 
     public function clearMediaCollection(string $collectionName = 'default'): HasMedia
@@ -54,6 +64,9 @@ abstract class HasMediaTestStub implements HasMedia
         return $this;
     }
 
+    /**
+     * @param  Collection<int, Media>|array<int, Media>  $excludedMedia
+     */
     public function clearMediaCollectionExcept(string $collectionName = 'default', Collection|array $excludedMedia = []): HasMedia
     {
         return $this;

@@ -1,3 +1,14 @@
+---
+title: "Fasi di sviluppo - Media Module"
+module: "Media"
+type: concept
+tags: [phases]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phases"
+related:
+  - "./webm.md"
+---
 # Fasi di sviluppo - Media Module
 
 ## Fase 1: Infrastruttura Core (Completata)

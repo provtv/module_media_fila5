@@ -6,9 +6,10 @@ namespace Modules\Media\Actions\Diagnostic\S3;
 
 use Exception;
 use Illuminate\Support\Facades\Storage;
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\file_put_contents;
 use function Safe\unlink;
-use Spatie\QueueableAction\QueueableAction;
 
 class TestFileUploadDownloadAction
 {

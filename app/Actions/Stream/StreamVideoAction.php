@@ -7,14 +7,15 @@ namespace Modules\Media\Actions\Stream;
 use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use function is_string;
 use Modules\Media\Models\Media;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+use function is_string;
 use function Safe\fclose;
 use function Safe\fread;
 use function Safe\ob_end_clean;
 use function Safe\set_time_limit;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Streams video content from storage with HTTP range support.

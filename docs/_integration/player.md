@@ -1,3 +1,14 @@
+---
+title: "player"
+module: "Media"
+type: concept
+tags: [player]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "player"
+related:
+  - "./webm.md"
+---
 # player
 
 <!-- Contenuto migrato da _docs/player.txt -->

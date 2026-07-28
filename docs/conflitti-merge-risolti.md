@@ -1,3 +1,14 @@
+---
+title: "Risoluzione dei Conflitti Git nel Modulo Media"
+module: "Media"
+type: concept
+tags: [conflitti, merge, risolti]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflitti merge risolti"
+related:
+  - "./webm.md"
+---
 # Risoluzione dei Conflitti Git nel Modulo Media
 
 ## Panoramica
@@ -8,14 +19,14 @@ Questo documento descrive i conflitti di merge Git risolti nel modulo Media e fo
 
 Per una panoramica generale sulla risoluzione dei conflitti Git nel progetto, consultare:
 
-- [Risoluzione Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
-- [Report completo di intervento](../../../../docs/logs/conflict_resolution_report.md)
-- [Gestione Git con Script Bash](../../../../docs/bashscripts/gestione_git.md)
+- [Risoluzione Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+- [Report completo di intervento](../../../../../docs/logs/conflict_resolution_report.md)
+- [Gestione Git con Script Bash](../../../../../docs/bashscripts/gestione_git.md)
 
 ## Collegamenti alle Risoluzioni Specifiche
 
 - [Risoluzione conflitto VideoEntry](./risoluzione_conflitti_video_entry.md)
-- [Risoluzione conflitto MediaConvertResource](../../../../docs/media_convert_resource_conflict.md)
+- [Risoluzione conflitto MediaConvertResource](../../../../../docs/media_convert_resource_conflict.md)
 
 ## File Risolti
 
@@ -112,7 +123,7 @@ public function getFileAttribute(?string $value): ?string
 
 **Decisione architetturale**: È stata adottata la versione che utilizza `tap($this->model)->update($up)`, eliminando linee ridondanti e mantenendo lo stile coerente. Questa scelta garantisce che l'oggetto model sia sempre aggiornato e pronto per un utilizzo successivo.
 
-Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
+Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../docs/risoluzione_conflitti_git.md).
 
 ---
 
@@ -162,7 +173,7 @@ public function getFromXml($xmlFile)
 
 **Decisione architetturale**: È stata adottata la versione che mantiene gli import ordinati e privi di duplicazioni, eliminando linee vuote inutili e assicurando che la logica del metodo sia compatta e leggibile. Nessuna modifica funzionale è stata introdotta, ma solo miglioramenti di stile e mantenibilità.
 
-Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
+Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../docs/risoluzione_conflitti_git.md).
 
 ---
 
@@ -176,7 +187,7 @@ Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare 
 
 **Decisione architetturale**: È stata adottata la versione che utilizza `Storage::disk($disk_mp4)->path($file_new)` per mantenere coerenza con le altre azioni di conversione e per evitare la generazione di URL quando non necessaria.
 
-Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
+Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../docs/risoluzione_conflitti_git.md).
 
 ### 7. VideoStream.php
 
@@ -304,7 +315,7 @@ public static function getFormSchema(): array
 }
 ```
 
-Per dettagli completi sulla risoluzione di MediaConvertResource, vedere [documentazione dedicata](../../../../docs/media_convert_resource_conflict.md).
+Per dettagli completi sulla risoluzione di MediaConvertResource, vedere [documentazione dedicata](../../../../../docs/media_convert_resource_conflict.md).
 
 ### 11. Merge.php
 
@@ -314,7 +325,7 @@ Per dettagli completi sulla risoluzione di MediaConvertResource, vedere [documen
 
 **Decisione architetturale**: È stata adottata la versione che utilizza il driver Gd di Intervention Image, con gestione esplicita delle dimensioni della canvas e posizionamento progressivo delle immagini. La soluzione mantiene la compatibilità con l'ecosistema Laravel e assicura la massima chiarezza del flusso di composizione.
 
-Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
+Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../docs/risoluzione_conflitti_git.md).
 
 ---
 
@@ -324,7 +335,7 @@ Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare 
 
 **Decisione architetturale**: È stata adottata la versione che utilizza il driver Gd di Intervention Image, con gestione esplicita delle dimensioni della canvas e posizionamento progressivo delle immagini. La soluzione mantiene la compatibilità con l'ecosistema Laravel e assicura la massima chiarezza del flusso di composizione.
 
-Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
+Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../docs/risoluzione_conflitti_git.md).
 
 ### 12. VideoEntry.php
 

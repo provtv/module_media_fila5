@@ -4,48 +4,64 @@ declare(strict_types=1);
 
 namespace Modules\Media\Tests;
 
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Modules\Media\Providers\MediaServiceProvider;
+use Modules\Media\Tests\Support\HasMediaTestStub;
 use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
+use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * Base test case for Media module.
  *
  * Uses MySQL from .env.testing.
+ * All module connections are mapped by TenantServiceProvider.
+ * Migrations must be run ONCE externally: php artisan migrate --env=testing
+ * DatabaseTransactions handles rollback between tests.
  */
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends XotBaseTestCase
 {
-    use CreatesApplication;
     use DatabaseTransactions;
 
-    protected static bool $migrated = false;
-
-    protected function setUp(): void
+    /**
+     * @param  array<string, mixed>  $where
+     */
+    public function assertMediaTableHas(string $table, array $where, string $connection = 'media'): void
     {
-        parent::setUp();
-
-        if (! self::$migrated) {
-            $this->artisan('migrate:fresh', [
-                '--force' => true,
-            ]);
-
-            $this->artisan('module:migrate', [
-                '--force' => true,
-            ]);
-
-            self::$migrated = true;
-        }
+        $this->assertDatabaseHas($table, $where, $connection);
     }
 
-    protected function getPackageProviders($app): array
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $class
+     * @return T&MockObject
+     */
+    public function makeTestMock(string $class): object
+    {
+        return $this->createMock($class);
+    }
+
+    /**
+     * Mock HasMedia con metodo update (persistenza path allegati).
+     *
+     * @return HasMediaTestStub&MockObject
+     */
+    public function makeHasMediaRecordMock(): object
+    {
+        return $this->createPartialMock(HasMediaTestStub::class, ['addMedia', 'update']);
+    }
+
+    /**
+     * @return array<int, class-string>
+     */
+    protected function getPackageProviders(Application $app): array
     {
         return [
-            MediaServiceProvider::class,
+            ...parent::getPackageProviders($app),
             UserServiceProvider::class,
-            XotServiceProvider::class,
+            MediaServiceProvider::class,
         ];
     }
 }

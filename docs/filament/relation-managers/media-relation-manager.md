@@ -1,3 +1,14 @@
+---
+title: "MediaRelationManager Documentation"
+module: "Media"
+type: concept
+tags: [media, relation, manager]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media relation manager"
+related:
+  - "./webm.md"
+---
 # MediaRelationManager Documentation
 
 ## Overview
@@ -48,5 +59,5 @@ class YourResource extends Resource
 - Aggiunta tipizzazione stretta
 - Implementata integrazione Laraxot
 ## Collegamenti tra versioni di media-relation-manager.md
-* [media-relation-manager.md](../../../Media/docs/filament/relation-managers/media-relation-manager.md)
-* [media-relation-manager.md](../../../Media/docs/resources/media-relation-manager.md)
+* [media-relation-manager.md](../../../media/docs/filament/relation-managers/media-relation-manager.md)
+* [media-relation-manager.md](../../../media/docs/resources/media-relation-manager.md)

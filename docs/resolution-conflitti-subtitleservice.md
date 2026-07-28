@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitti Git - SubtitleService.php"
+module: "Media"
+type: concept
+tags: [resolution, conflitti, subtitleservice]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resolution conflitti subtitleservice"
+related:
+  - "./webm.md"
+---
 # Risoluzione Conflitti Git - SubtitleService.php
 
 ## Intento
@@ -11,5 +22,5 @@
 - Mantenimento dell'utilizzo di `tap($this->model)->update($up)` per garantire coerenza e robustezza.
 
 ## Collegamenti
-- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
-- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
+- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+- [Documentazione Conflitti Git nei Moduli](../../../../../docs/conflitti_git_moduli.md)

@@ -1,3 +1,14 @@
+---
+title: "Funzionalità Avanzate"
+module: "Media"
+type: concept
+tags: [advanced]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "advanced"
+related:
+  - "./webm.md"
+---
 # Funzionalità Avanzate
 
 Questa sezione copre funzionalità avanzate come la generazione di codici a barre, QR code, la creazione di segnalibri (bookmark), indici e altri metodi utili della libreria.

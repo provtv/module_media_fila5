@@ -1,3 +1,14 @@
+---
+title: "Boost Skill Fix Summary - Media Module"
+module: "Media"
+type: concept
+tags: [boost, skill, fix, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "boost skill fix summary"
+related:
+  - "./webm.md"
+---
 # Boost Skill Fix Summary - Media Module
 
 **Date**: 2026-03-02  

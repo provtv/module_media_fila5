@@ -1,8 +1,29 @@
+---
+title: "Quality Analysis Report - Media Module"
+module: "Media"
+type: concept
+tags: [quality, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality analysis"
+related:
+  - "./webm.md"
+---
 # Quality Analysis Report - Media Module
-**Date**: 2025-11-11
+**Date**: [DATE]
 **Status**: ✅ **ILLUMINATED** - PHPStan Level 10 PASS
 
 ---
+
+## Aggiornamento verifica 2026-07-01
+
+- **PHPStan** (`level: max`): **0 errori** confermati, incluso `Http/Requests/CreateTemporaryUploadFromDirectS3UploadRequest.php:60` (il presunto errore "Cannot instantiate class using mixed" di un run precedente era un falso positivo da OOM parziale; il codice usa già `class-string<Media>` + `@var Media $mediaModel`).
+- **PHPMD**: rimossa dead code (variabili/proprietà mai lette): `Actions/SaveAttachmentsAction.php::executeOLD()` (metodo legacy non referenziato con `dddx()` di debug, rimosso), `Actions/S3/UploadFileAction.php` (`$acl` ora riusato), `Actions/Video/ConvertVideoByConvertDataAction.php` (`$msg` ora loggato), `Filament/Clusters/Test/Pages/AwsTest.php` e `S3Test.php` (variabili morte `$result`/`$tests`/`$category`), `Models/Policies/MediaBasePolicy.php` (`$xotData` mai usato). Non toccati: `StaticAccess`, naming snake_case, complessità architetturale (`AddAttachmentAction`, `VideoEntry`).
+- **PHPInsights**: punteggi sostanzialmente invariati (Code 83, Complexity 88.9, Architecture 88.2, Style 84.3); nessun `--fix` automatico eseguito su questo modulo (nel modulo Lang ha causato regressioni PHPStan).
+- **Test**: corretto bug preesistente in `tests/Unit/Actions/SaveAttachmentsActionTest.php` (`uses(Tests\TestCase::class)` con namespace non qualificato). Esecuzione `pest` bloccata in questo sandbox da un problema di infrastruttura pre-esistente (manca `database/database.sqlite`), non imputabile al codice.
+
+---
+
 
 ## Executive Summary
 
@@ -205,6 +226,5 @@ The **Media module** is in **excellent condition** with PHPStan Level 10 complia
 
 ---
 
-**Next Review**: After high-priority refactoring (Q1 2025)
 **Documentation**: Comprehensive (63 docs files)
 **Test Coverage**: Integration tests available

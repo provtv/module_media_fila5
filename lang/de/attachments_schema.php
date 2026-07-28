@@ -14,6 +14,7 @@ return [
                 'mimes' => 'Die Datei muss ein PDF-Dokument oder ein Bild sein',
                 'max' => 'Die maximale Dateigröße beträgt 10MB',
             ],
+            'tooltip' => '',
         ],
         'prescription' => [
             'label' => 'Ärztliches Rezept',
@@ -25,6 +26,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
         'medical_report' => [
             'label' => 'Medizinischer Bericht',
@@ -35,6 +37,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
         'certificate' => [
             'label' => 'Zertifikat',
@@ -45,6 +48,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
         'consent_form' => [
             'label' => 'Einverständniserklärung',
@@ -55,6 +59,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
         'xray_image' => [
             'label' => 'Röntgenbild',
@@ -65,6 +70,7 @@ return [
                 'mimes' => 'Unterstützte Formate: JPG, PNG, DICOM',
                 'max' => 'Maximale Größe: 20MB',
             ],
+            'tooltip' => '',
         ],
         'treatment_plan' => [
             'label' => 'Behandlungsplan',
@@ -75,6 +81,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
         'medical_history' => [
             'label' => 'Krankengeschichte',
@@ -85,6 +92,7 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+            'tooltip' => '',
         ],
     ],
     'validation' => [
@@ -98,5 +106,16 @@ return [
         'upload_error' => 'Fehler beim Hochladen der Datei',
         'delete_success' => 'Datei erfolgreich gelöscht',
         'delete_error' => 'Fehler beim Löschen der Datei',
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
     ],
 ];

@@ -1,6 +1,17 @@
+---
+title: "MCP Server Configuration - Media Module"
+module: "Media"
+type: concept
+tags: [mcp, configuration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp configuration"
+related:
+  - "./webm.md"
+---
 # MCP Server Configuration - Media Module
 
-**Last Updated**: 31 Gennaio 2026
+
 **Status**: ✅ Configured
 **MCP Servers**: Asana, ClickUp, Filesystem, Database, Redmine (Planned)
 
@@ -36,14 +47,14 @@ The Media module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
       "description": "Access to Media module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
       },
       "description": "SQLite database queries"
     }
@@ -58,7 +69,7 @@ The Media module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
-"Create task in 'LaravelPizza - Media Module' project: 'Increase test coverage to 90%'"
+"Create task in '<nome progetto> - Media Module' project: 'Increase test coverage to 90%'"
 
 # Update status
 "Update task 'Reduce PHPStan suppressions' status to 'In Progress'"
@@ -111,17 +122,17 @@ The Media module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
-- [Media Module Roadmap](./roadmap-2026-01-31.md)
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+- [Media Module Roadmap](./roadmap-[date].md)
 
 ---
 
 ## 🔄 Updates
 
-- **2026-01-31**: Added ClickUp support
-- **2026-01-31**: Planned Redmine integration
+- **[DATE]**: Added ClickUp support
+- **[DATE]**: Planned Redmine integration
 - **Servers Active**: 4 (Asana, ClickUp, Filesystem, Database)
 
 ---

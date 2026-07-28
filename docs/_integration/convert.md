@@ -1,3 +1,14 @@
+---
+title: "convert"
+module: "Media"
+type: concept
+tags: [convert]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "convert"
+related:
+  - "./webm.md"
+---
 # convert
 
 <!-- Contenuto migrato da _docs/convert.txt -->

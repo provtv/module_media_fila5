@@ -1,3 +1,14 @@
+---
+title: "Task: Media Library Enhancement"
+module: "Media"
+type: concept
+tags: [media, library, enhancement]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media library enhancement"
+related:
+  - "./webm.md"
+---
 # Task: Media Library Enhancement
 
 **Modulo**: Media  

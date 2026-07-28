@@ -1,3 +1,14 @@
+---
+title: "Media Module - PHPStan Level 10 Errors Resolution Roadmap"
+module: "Media"
+type: concept
+tags: [phpstan, errors, resolution, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors resolution roadmap"
+related:
+  - "./webm.md"
+---
 # Media Module - PHPStan Level 10 Errors Resolution Roadmap
 
 ## 📊 Stato Attuale

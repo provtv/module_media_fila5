@@ -1,6 +1,16 @@
+---
+title: "Media Module: Philosophy, Purpose, and Design Principles"
+module: "Media"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy"
+related:
+  - "./webm.md"
+---
 # Media Module: Philosophy, Purpose, and Design Principles
 
-**Date:** December 23, 2025
 
 ## 🎯 Purpose and Core Responsibilities
 

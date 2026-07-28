@@ -1,3 +1,14 @@
+---
+title: "Filament 5.x compatibility - modulo Media"
+module: "Media"
+type: concept
+tags: [filament, 5x, compatibility]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5x compatibility"
+related:
+  - "./webm.md"
+---
 # Filament 5.x compatibility - modulo Media
 
 **Versione Filament:** v5.2.1

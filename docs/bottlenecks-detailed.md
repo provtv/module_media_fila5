@@ -1,3 +1,14 @@
+---
+title: "Analisi Dettagliata dei Colli di Bottiglia - Modulo Media"
+module: "Media"
+type: concept
+tags: [bottlenecks, detailed]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bottlenecks detailed"
+related:
+  - "./webm.md"
+---
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Media
 
 ## Panoramica
@@ -351,9 +362,9 @@ final class Media extends Model
 
 ```
 ## Collegamenti tra versioni di bottlenecks_detailed.md
-* [bottlenecks_detailed.md](../../../Xot/docs/bottlenecks_detailed.md)
-* [bottlenecks_detailed.md](../../../Job/docs/bottlenecks_detailed.md)
-* [bottlenecks_detailed.md](../../../Media/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../xot/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../job/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../media/docs/bottlenecks_detailed.md)
 
 ### Versione Incoming
 

@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Media\Actions\Subtitle;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\file_put_contents;
 use function Safe\fopen;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Converts an SRT subtitle file (public path) to WebVTT format.

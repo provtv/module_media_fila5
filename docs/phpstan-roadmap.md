@@ -1,6 +1,17 @@
+---
+title: "PHPStan Roadmap - Media Module"
+module: "Media"
+type: concept
+tags: [phpstan, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan roadmap"
+related:
+  - "./webm.md"
+---
 # PHPStan Roadmap - Media Module
 
-> **Date**: 2026-01-14
+> **Date**: [DATE]
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 

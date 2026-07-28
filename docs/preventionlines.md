@@ -1,3 +1,14 @@
+---
+title: "Linee Guida Prevenzione Problemi - Modulo Media"
+module: "Media"
+type: concept
+tags: [preventionlines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "preventionlines"
+related:
+  - "./webm.md"
+---
 # Linee Guida Prevenzione Problemi - Modulo Media
 
 ## 🚨 Problemi Critici Risolti in S3Test.php

@@ -1,3 +1,14 @@
+---
+title: "PHPStan S3 Actions Critical Errors Analysis"
+module: "Media"
+type: concept
+tags: [phpstan, s3, actions, critical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan s3 actions critical errors"
+related:
+  - "./webm.md"
+---
 # PHPStan S3 Actions Critical Errors Analysis
 
 ## Errori Critici Identificati nel Modulo Media
@@ -176,5 +187,4 @@ $effectiveUri = is_array($metadata) && isset($metadata['effectiveUri'])
 3. **Safe Functions**: Import e utilizzo devono essere consistenti
 4. **Documentation**: Critical per mantenere consistenza nel team
 
-*Ultimo aggiornamento: gennaio 2025*
 *Status: COMPLETATO CON SUCCESSO - TUTTI GLI ERRORI RISOLTI*

@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\IconColumn;
 use Illuminate\Http\Request;
+use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn as IconColumn;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
+// phpmd: CyclomaticComplexity, NPathComplexity — setUp Filament con branching mime/icon
 class IconMediaColumn extends IconColumn
 {
     protected function setUp(): void
@@ -19,8 +20,6 @@ class IconMediaColumn extends IconColumn
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
-
-            return null;
         })
             ->icon('heroicon-o-document-text')
             ->color(function ($record) use ($attachment): string {
@@ -43,20 +42,20 @@ class IconMediaColumn extends IconColumn
             ->action(function (array $arguments, Request $request) use ($attachment) {
                 // Skip action if record is not available or doesn't have media capabilities
                 if (! isset($arguments['record'])) {
-                    return null;
+                    return;
                 }
 
                 $record = $arguments['record'];
 
                 // Verify record is an object and has the required method
                 if (! is_object($record) || ! method_exists($record, 'getFirstMedia')) {
-                    return null;
+                    return;
                 }
 
                 /** @var Media|null $media */
                 $media = $record->getFirstMedia($attachment);
                 if ($media === null) {
-                    return null;
+                    return;
                 }
 
                 return $media->toInlineResponse($request);

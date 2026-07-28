@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Media\Actions\Subtitle;
 
 use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\realpath;
 use function Safe\simplexml_load_string;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Extracts the plain text content from a subtitle XML file.

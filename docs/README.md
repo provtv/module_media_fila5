@@ -1,50 +1,56 @@
-# 🎞️ **Media Module** - High-Performance Asset Management
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![PHPStan level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![Visual Engine](https://img.shields.io/badge/Engine-FFmpeg%20%7C%20Imagick%20%7C%20LibVips-blueviolet.svg)](https://ffmpeg.org/)
-
-> **🚀 Modulo Media**: Il centro di comando per le risorse digitali di Laraxot. Non è un semplice uploader: è una pipeline di trasformazione che gestisce compressione, transcoding video, ottimizzazione immagini e storage distribuito (S3/Cloud).
-
-## 📋 **Panoramica**
-
-Il modulo **Media** automatizza il ciclo di vita di ogni byte multimediale caricato.
-
-- 🖼️ **Smart Transformations**: Generazione automatica di preview, thumbnail e formati next-gen (WebP/AVIF).
-- 🎥 **Video Transcoding**: Engine FFmpeg integrato per convertire video in formati streaming-efficient (H.264/VP9).
-- ☁️ **Cloud Native**: Supporto multi-disk trasparente (Local, S3, Azure) gestito dall'astrazione CloudStorage.
-- 🛡️ **Safe Uploads**: Validazione rigorosa di MIME types, dimensioni e scan anti-malware integrato.
-- 🎨 **Visual Library**: Interfaccia Filament per gestire migliaia di file con drag-and-drop e visualizzazione a griglia.
-
-## ⚡ **Funzionalità Core**
-
-### 🧩 **Lazy Conversions**
-Le conversioni non bloccano la UI. Vengono processate in background tramite il modulo **Job**, garantendo un'esperienza utente fluida.
-
-### 🧘 **Philosophical Design**
-"Il file originale è sacro". Ogni trasformazione è una derivata che non altera mai la sorgente originale.
-
-## 🚀 **Quick Start**
-
-### 📦 **Associazione Media**
-```php
-$model->addMedia($file)->toMediaCollection('gallery');
-```
-
-### ⚙️ **Recupero URL Ottimizzata**
-```php
-echo $model->getFirstMediaUrl('gallery', 'webp-compressed');
-```
-
-## 📚 **Documentazione Centrale**
-
-- 📖 **[Indice Documentazione](./00-index.md)** - Mappa navigazione completa.
-- 🙏 **[Filosofia Media](./philosophy.md)** - La gestione degli asset digitali.
-- 🎥 **[FFmpeg Guide](./ffmpeg-integration.md)** - Come scaliamo il processing video.
-- ☁️ **[Storage Strategy](./file-management.md)** - Dove e come salviamo i dati.
-
+---
+title: documentazione modulo media
+module: Media
+type: index
+status: approved
+tags: [documentation, readme, modulo, second-brain]
+updated: "2026-05-27"
+related:
+  - ../README.md
 ---
 
-**🔄 Ultimo aggiornamento**: 31 Gennaio 2026
-**📦 Versione**: 3.2.0
-**✅ PHPStan level 10**: Compliance nativa garantita
+# Documentazione — modulo Media
+
+> **Mappa knowledge base locale.** Il [README in root](../README.md) è la vetrina (valore, release, onboarding); questo file indica **dove** trovare regole, wiki e audit per chi sviluppa o per gli agenti AI.
+
+## Scopo
+
+Media management module for the Laraxot ecosystem: images, videos, FFmpeg, and Intervention Image.
+
+## Dove iniziare
+
+- [Wiki locale](./wiki/index.md)
+- [Audit ridondanza](./code-redundancy-audit.md)
+- [Regole architettura](./architecture-rules.md)
+- [Disciplina agenti](./agent-edit-discipline.md)
+
+
+## Struttura tipica
+
+```text
+Media/
+├── README.md          ← vetrina (root package)
+├── docs/
+│   ├── README.md      ← questo indice
+│   └── wiki/          ← second brain (se presente)
+├── app/ o resources/
+└── composer.json
+```
+
+## Namespace / confini
+
+- Namespace: `Modules\Media`
+- Non duplicare qui la filosofia marketing: resta nel README root.
+
+## Collegamenti
+
+- [README root (vetrina)](../README.md)
+- [Xot (framework base)](../Xot/docs/)
+- [Wiki progetto](../../../docs/wiki/README.md)
+- [Standard README doppio](../../../../docs/wiki/standards/module-theme-readme-dual.md)
+
+## Per agenti
+
+1. Leggere scopo in questo file.
+2. Aprire `docs/wiki/index.md` se esiste.
+3. Seguire [disciplina issue GitHub](../../../docs/wiki/how-to/github-issue-agent-discipline.md) prima di modifiche sostanziali.
