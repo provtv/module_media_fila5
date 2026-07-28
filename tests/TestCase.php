@@ -7,17 +7,8 @@ namespace Modules\Media\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Media\Providers\MediaServiceProvider;
-<<<<<<< .merge_file_X3IMQI
 use Modules\Media\Tests\Support\HasMediaTestStub;
 use Modules\User\Providers\UserServiceProvider;
-=======
-use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-<<<<<<< HEAD
-use Modules\Media\Tests\Support\HasMediaTestStub;
-=======
->>>>>>> f6dc2a0 (.)
->>>>>>> .merge_file_Z1zfyn
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
@@ -53,7 +44,6 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< HEAD
      * Mock HasMedia con metodo update (persistenza path allegati).
      *
      * @return HasMediaTestStub&MockObject
@@ -64,8 +54,6 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-=======
->>>>>>> f6dc2a0 (.)
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array

@@ -8,28 +8,16 @@ use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-=======
-use SimpleXMLElement;
-use Webmozart\Assert\Assert;
-
->>>>>>> f6dc2a0 (.)
 use function Safe\file_put_contents;
 use function Safe\fopen;
 use function Safe\realpath;
 use function Safe\simplexml_load_string;
-<<<<<<< HEAD
 use SimpleXMLElement;
 
 /**
  * SubtitleService.
  *
  * @phpstan-type SubtitleItem array{sentence_i: int, item_i: int, start: float|int, end: float|int, time: string, text: string}
-=======
-
-/**
- * SubtitleService.
->>>>>>> f6dc2a0 (.)
  */
 class SubtitleService
 {
@@ -40,13 +28,7 @@ class SubtitleService
 
     public string $field_name = 'txt';
 
-<<<<<<< HEAD
     /** @var list<SubtitleItem> */
-=======
-    /**
-     * @var list<array<string, mixed>>
-     */
->>>>>>> f6dc2a0 (.)
     public array $subtitles = [];
 
     public Model $model;
@@ -59,11 +41,7 @@ class SubtitleService
     public static function getInstance(): self
     {
         if (! (self::$instance instanceof self)) {
-<<<<<<< HEAD
             self::$instance = new self();
-=======
-            self::$instance = new self;
->>>>>>> f6dc2a0 (.)
         }
 
         return self::$instance;
@@ -123,15 +101,9 @@ class SubtitleService
     }
 
     /**
-<<<<<<< HEAD
      * Restituisce i sottotitoli dal file.
      *
      * @return list<SubtitleItem>
-=======
-     * restituisce i sottotitoli, dal file ..
-     *
-     * @return list<array<string, mixed>>
->>>>>>> f6dc2a0 (.)
      */
     public function get(): array
     {
@@ -140,19 +112,10 @@ class SubtitleService
             return [];
         }
 
-<<<<<<< HEAD
         return match (Str::lower($info['extension'])) {
             'xml' => $this->getFromXml(),
             default => [],
         };
-=======
-        $func = 'getFrom'.Str::studly($info['extension']);
-
-        /** @var list<array<string, mixed>> $res */
-        $res = $this->{$func}();
-
-        return $res;
->>>>>>> f6dc2a0 (.)
     }
 
     /**
@@ -166,13 +129,7 @@ class SubtitleService
     }
 
     /**
-<<<<<<< HEAD
      * @return list<SubtitleItem>
-=======
-     * @return array<int, array<string, float|int|string|mixed>>
-     *
-     * @psalm-return list{0?: array{sentence_i: int<0, max>, item_i: int<0, max>, start: float|int, end: float|int, time: string, text: mixed},...}
->>>>>>> f6dc2a0 (.)
      */
     public function getFromXml(): array
     {
@@ -214,20 +171,6 @@ class SubtitleService
         return $data;
     }
 
-<<<<<<< HEAD
-=======
-    private function secondsToHms(int|float $seconds): string
-    {
-        $totalMs = (int) round($seconds * 1000);
-        $hours = intdiv($totalMs, 3_600_000);
-        $minutes = intdiv($totalMs % 3_600_000, 60_000);
-        $secs = intdiv($totalMs % 60_000, 1000);
-        $ms = $totalMs % 1000;
-
-        return sprintf('%02d:%02d:%02d,%03d', $hours, $minutes, $secs, $ms);
-    }
-
->>>>>>> f6dc2a0 (.)
     /**
      * Undocumented function.
      */
@@ -259,7 +202,6 @@ class SubtitleService
 
         file_put_contents(public_path($webVttFile), $header.implode('', $lines));
     }
-<<<<<<< HEAD
 
     private function secondsToHms(int|float $seconds): string
     {
@@ -271,6 +213,4 @@ class SubtitleService
 
         return sprintf('%02d:%02d:%02d,%03d', $hours, $minutes, $secs, $ms);
     }
-=======
->>>>>>> f6dc2a0 (.)
 }

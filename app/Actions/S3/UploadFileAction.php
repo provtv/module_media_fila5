@@ -6,14 +6,7 @@ namespace Modules\Media\Actions\S3;
 
 use Aws\S3\ObjectUploader;
 use Exception;
-<<<<<<< .merge_file_h3BckA
 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> f6dc2a0 (.)
->>>>>>> .merge_file_HNcipo
 use function Safe\fclose;
 use function Safe\filesize;
 use function Safe\fopen;
@@ -49,29 +42,16 @@ class UploadFileAction extends BaseS3Action
         try {
             $sourceFile = fopen($localFilePath, 'rb');
 
-<<<<<<< HEAD
             $contentType = mime_content_type($localFilePath);
 
             // Default options with proper typing
             $defaultOptions = [
                 'ACL' => 'private',
                 'ContentType' => $contentType !== '' ? $contentType : 'application/octet-stream',
-=======
-            // Default options with proper typing
-            $defaultOptions = [
-                'ACL' => 'private',
-                'ContentType' => mime_content_type($localFilePath) ?: 'application/octet-stream',
->>>>>>> f6dc2a0 (.)
             ];
 
             $uploadOptions = array_merge($defaultOptions, $options);
 
-<<<<<<< HEAD
-=======
-            // Ensure ACL is string for type safety
-            $acl = is_string($uploadOptions['ACL']) ? $uploadOptions['ACL'] : 'private';
-
->>>>>>> f6dc2a0 (.)
             // Use ObjectUploader with proper type casting
             $uploader = new ObjectUploader(
                 $this->s3Client,

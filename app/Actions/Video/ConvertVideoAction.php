@@ -1,26 +1,11 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> f6dc2a0 (.)
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
-<<<<<<< HEAD
-namespace Modules\Media\Actions\Video;
-
-<<<<<<< .merge_file_W8EeOn
-=======
-=======
-declare(strict_types=1);
-
-namespace Modules\Media\Actions\Video;
->>>>>>> f6dc2a0 (.)
-
->>>>>>> .merge_file_MNUvLs
 use FFMpeg\Format\Video\X264;
 use Illuminate\Support\Facades\Storage;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
@@ -41,11 +26,7 @@ class ConvertVideoAction
 
         $exportedMedia = $openedMedia->export();
 
-<<<<<<< HEAD
-        $format = new X264();
-=======
         $format = new X264;
->>>>>>> f6dc2a0 (.)
         $format->setKiloBitrate(1000);
 
         $exportedMedia->toDisk($disk_mp4);

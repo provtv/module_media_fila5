@@ -6,14 +6,7 @@ namespace Modules\Media\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Http\UploadedFile;
-<<<<<<< .merge_file_xcKe7m
 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> f6dc2a0 (.)
->>>>>>> .merge_file_TgtQMi
 use function in_array;
 
 class FileExtensionRule implements Rule
@@ -22,26 +15,15 @@ class FileExtensionRule implements Rule
     protected array $validExtensions = [];
 
     /**
-<<<<<<< HEAD
      * @param  list<string>  $validExtensions
-=======
-     * @param  array<int, string>  $validExtensions
->>>>>>> f6dc2a0 (.)
      */
     public function __construct(array $validExtensions = [])
     {
         $this->validExtensions = array_values(array_map(
             /**
-<<<<<<< HEAD
              * @return lowercase-string
              */
             static fn (string $ext): string => mb_strtolower($ext),
-=======
-             * @param  mixed  $ext
-             * @return lowercase-string
-             */
-            static fn ($ext): string => mb_strtolower((string) $ext),
->>>>>>> f6dc2a0 (.)
             $validExtensions
         ));
     }

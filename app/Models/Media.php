@@ -120,8 +120,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  */
 class Media extends SpatieMedia
 {
-    /** @use HasXotFactory<\Modules\Media\Database\Factories\MediaFactory> */
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @use HasXotFactory<MediaFactory> */
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use Updater;
