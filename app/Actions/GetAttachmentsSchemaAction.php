@@ -9,10 +9,7 @@ use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 // phpmd: UnusedFormalParameter — $disk riservato a future collection dedicate
-=======
->>>>>>> f6dc2a0 (.)
 class GetAttachmentsSchemaAction
 {
     /**

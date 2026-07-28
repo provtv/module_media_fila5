@@ -14,15 +14,8 @@ use Modules\Xot\Filament\Infolists\Components\XotBaseEntry;
 use Throwable;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 // phpmd: TooManyFields, TooManyPublicMethods, ExcessiveClassComplexity, LongVariable — entry video Filament ricca
-<<<<<<< .merge_file_0MXZyi
 class VideoEntry extends XotBaseEntry
-=======
-=======
->>>>>>> f6dc2a0 (.)
-class VideoEntry extends Entry
->>>>>>> .merge_file_InDtHE
 {
     /**
      * @var view-string

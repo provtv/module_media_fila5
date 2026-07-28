@@ -7,10 +7,7 @@ namespace Modules\Media\Filament\Tables\Columns;
 use Modules\Media\Actions\CloudFront\GetCloudFrontSignedUrlAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn as IconColumn;
 
-<<<<<<< HEAD
 // phpmd: CyclomaticComplexity, NPathComplexity — setUp Filament con branching mime/icon
-=======
->>>>>>> f6dc2a0 (.)
 class CloudFrontIconMediaColumn extends IconColumn
 {
     protected function setUp(): void
@@ -22,10 +19,6 @@ class CloudFrontIconMediaColumn extends IconColumn
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
-<<<<<<< HEAD
-=======
-
->>>>>>> f6dc2a0 (.)
         })
             ->icon('heroicon-o-document-text')
             ->color(function ($record) use ($attachment): string {

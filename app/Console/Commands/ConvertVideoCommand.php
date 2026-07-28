@@ -30,11 +30,7 @@ class ConvertVideoCommand extends Command
             return '';
         }
 
-<<<<<<< HEAD
         $format = new WebM();
-=======
-        $format = new WebM;
->>>>>>> f6dc2a0 (.)
         $extension = mb_strtolower(class_basename($format));
         $file_new = Str::of($file)->replaceLast('.mp4', '.'.$extension)->toString();
 

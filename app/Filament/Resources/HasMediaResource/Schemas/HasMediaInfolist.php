@@ -21,8 +21,4 @@ class HasMediaInfolist extends XotBaseResourceInfolist
             'created_at' => TextEntry::make('created_at')->dateTime(),
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f6dc2a0 (.)
