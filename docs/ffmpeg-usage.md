@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Utilizzo di Laravel-FFMpeg nel Modulo Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "ffmpeg usage"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Utilizzo di Laravel-FFMpeg nel Modulo Media
 
 ## Introduzione

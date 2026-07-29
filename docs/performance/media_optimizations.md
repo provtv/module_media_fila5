@@ -1,21 +1,24 @@
+<<<<<<< HEAD
 ---
 title: "Ottimizzazioni Performance Modulo Media"
 module: "Media"
 type: concept
-tags: [media, optimizations, 1]
+tags: [media, optimizations]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "media optimizations 1"
+qmd: "media optimizations"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Ottimizzazioni Performance Modulo Media
 
 ## 1. Ottimizzazione Conversione Video
 **File**: `laravel/Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
 **Linee**: 1-100
 
-**Problema**:
+**Problema**: 
 - Nessun caching dei parametri di conversione
 - Notifiche inviate ad ogni progresso
 - Aggiornamenti DB frequenti durante la conversione
@@ -67,7 +70,7 @@ final class ConvertVideoByMediaConvertAction
                         'remaining' => $remaining,
                         'rate' => $rate,
                     ];
-
+                    
                     // Notifica solo ogni NOTIFICATION_THRESHOLD%
                     if (($percentage - $lastNotificationPercentage) >= self::NOTIFICATION_THRESHOLD) {
                         $msg = sprintf(
@@ -76,15 +79,15 @@ final class ConvertVideoByMediaConvertAction
                             $remaining,
                             $rate
                         );
-
+                        
                         Notification::make()
                             ->title($msg)
                             ->success()
                             ->send();
-
+                            
                         $lastNotificationPercentage = $percentage;
                     }
-
+                    
                     // Aggiorna solo ogni 5 secondi
                     if (!Cache::has("convert_update_{$record->id}")) {
                         $record->update($updates);
@@ -148,7 +151,7 @@ final class GetVideoFrameContentAction
     /**
      * @return string|null
      */
-    public function execute(string $disk_mp4, string $file_mp4, int $time): ?string
+    public function execute(string $disk_mp4, string $file_mp4, int $time): ?string 
     {
         Assert::stringNotEmpty($disk_mp4);
         Assert::stringNotEmpty($file_mp4);
@@ -159,7 +162,7 @@ final class GetVideoFrameContentAction
         }
 
         $cacheKey = $this->getCacheKey($disk_mp4, $file_mp4, $time);
-
+        
         return Cache::tags(['video_frames'])
             ->remember($cacheKey, self::CACHE_TTL, function() use ($disk_mp4, $file_mp4, $time) {
                 return $this->extractFrame($disk_mp4, $file_mp4, $time);
@@ -172,11 +175,11 @@ final class GetVideoFrameContentAction
     public function extractFrameBatch(string $disk_mp4, string $file_mp4, array $times): void
     {
         Assert::allGreaterThanEq($times, 0);
-
+        
         foreach (array_chunk($times, self::BATCH_SIZE) as $batch) {
             foreach ($batch as $time) {
                 $cacheKey = $this->getCacheKey($disk_mp4, $file_mp4, $time);
-
+                
                 if (!Cache::tags(['video_frames'])->has($cacheKey)) {
                     Cache::tags(['video_frames'])->put(
                         $cacheKey,
@@ -210,7 +213,7 @@ final class GetVideoFrameContentAction
     private function getFallbackImage(): string
     {
         $fallbackPath = config('media.video.fallback_image', self::DEFAULT_FALLBACK);
-
+        
         return Cache::remember('video_fallback_image', self::CACHE_TTL, function() use ($fallbackPath) {
             return Storage::disk('public_html')->get($fallbackPath);
         });
@@ -254,7 +257,7 @@ final class TemporaryUploadPathGenerator implements PathGenerator
     public function getPath(Media $media): string
     {
         Assert::lessThanEq($media->size, self::MAX_SIZE, 'File troppo grande');
-
+        
         return Cache::remember(
             "temp_path_{$media->id}",
             self::CACHE_TTL,
@@ -277,7 +280,7 @@ final class TemporaryUploadPathGenerator implements PathGenerator
         $base = config('media.temp_path', 'temp');
         $date = now()->format('Y/m/d');
         $hash = Str::random(40);
-
+        
         return "{$base}/{$date}/{$hash}";
     }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module - Product Launch Plan"
 module: "Media"
@@ -9,7 +10,13 @@ qmd: "product launch plan"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> f6dc2a0 (.)
+# Media - Product Launch Plan
+=======
 # Media Module - Product Launch Plan
+>>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Version:** 1.0.0  

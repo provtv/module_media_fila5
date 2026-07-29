@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module - Sprint Planning"
 module: "Media"
@@ -9,7 +10,13 @@ qmd: "sprint planning"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> f6dc2a0 (.)
+# Sprint Planning: Media Module
+=======
 # Media Module - Sprint Planning
+>>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Sprint:** Sprint 1 (March 12-25, 2026)  

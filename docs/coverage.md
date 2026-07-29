@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module Test Coverage"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "coverage"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Media Module Test Coverage
 
 ## Coverage Results

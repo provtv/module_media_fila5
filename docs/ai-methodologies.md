@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "AI Methodologies Handbook"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "ai methodologies"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.

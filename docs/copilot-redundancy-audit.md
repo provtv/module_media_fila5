@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Copilot Redundancy Audit"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "copilot redundancy audit"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

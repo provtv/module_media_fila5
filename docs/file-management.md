@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione dei File in <nome progetto>"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "file management"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Gestione dei File in <nome progetto>
 
 ## Panoramica

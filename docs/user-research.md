@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module - User Research"
 module: "Media"
@@ -9,7 +10,13 @@ qmd: "user research"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> f6dc2a0 (.)
+# User Research: Media Module
+=======
 # Media Module - User Research
+>>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Version:** 1.0.0  

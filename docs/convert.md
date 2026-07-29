@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Convert"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "convert"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 https://tobyokeke.com/how-to-convert-uploaded-videos-in-laravel-1d605baf5033
 
 https://stackoverflow.com/questions/76302960/convert-large-video-files-with-php-ffmpeg

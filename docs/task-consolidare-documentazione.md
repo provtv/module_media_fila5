@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Consolidare Documentazione - Media"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "task consolidare documentazione"
 related:
   - "./webm.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 # Task: Consolidare Documentazione - Media
 
 **Modulo**: Media

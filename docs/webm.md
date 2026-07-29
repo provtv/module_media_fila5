@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Webm"
 module: "Media"
@@ -9,6 +10,8 @@ qmd: "webm"
 related:
   - "./migrazione-filament-4.md"
 ---
+=======
+>>>>>>> f6dc2a0 (.)
 https://pixelpoint.io/blog/web-optimized-video-ffmpeg/
 
 ffmpeg -i in.mp4 -c:v libvpx-vp9 -threads 4 out.mp4
