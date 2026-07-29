@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi di Ottimizzazione - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "optimization analysis"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Analisi di Ottimizzazione - Modulo Media
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

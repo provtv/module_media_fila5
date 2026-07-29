@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Media Security and Access Control"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "media security access control"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Task: Media Security and Access Control
 
 **Modulo**: Media  

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Upgrade Laravel 13 - Media 🐄✨"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "laravel 13 upgrade"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Upgrade Laravel 13 - Media 🐄✨
 
 ## 🎯 Visione Architetturale

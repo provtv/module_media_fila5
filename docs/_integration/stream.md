@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "__stream"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "stream"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 
 # __stream
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "S3Test.php - Analisi Refactoring e Regole di Conformità Laraxot"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "s3test refactoring analysis"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # S3Test.php - Analisi Refactoring e Regole di Conformità Laraxot
 
 ## 🚨 **PROBLEMATICHE IDENTIFICATE E RISOLTE**
@@ -142,11 +139,7 @@ protected function getFormSchema(): array
 
 ## 🔗 **Collegamenti Documentazione**
 
-<<<<<<< HEAD
 - [Media Module README](README.md)
-=======
-- [Media Module README](../readme.md)
->>>>>>> f6dc2a0 (.)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [Translation Rules](../../../../docs/translation-rules.md)
 - [PHPStan Guidelines](../../../../docs/phpstan-guidelines.md)

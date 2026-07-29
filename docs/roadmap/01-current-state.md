@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Current State - Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "01 current state"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Current State - Media
 
 ## Baseline

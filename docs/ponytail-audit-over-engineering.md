@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ponytail audit — Media (over-engineering)"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "ponytail audit over engineering"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Ponytail audit — Media (over-engineering)
 
 **Ultimo run:** 2026-06-30  

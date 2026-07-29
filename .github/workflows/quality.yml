@@ -20,11 +20,7 @@ jobs:
     environment: Testing
     
     steps:
-<<<<<<< HEAD
       - uses: actions/checkout@v7
-=======
-      - uses: actions/checkout@v5
->>>>>>> f6dc2a0 (.)
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -66,4 +62,3 @@ jobs:
           else
             echo "PHPInsights not found, skipping..."
           fi
-

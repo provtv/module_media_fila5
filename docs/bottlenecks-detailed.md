@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Dettagliata dei Colli di Bottiglia - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "bottlenecks detailed"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Media
 
 ## Panoramica

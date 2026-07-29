@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Indice della Documentazione - Modulo Media"
 module: "Media"
@@ -10,10 +9,6 @@ qmd: "index modulo media bridge readme"
 related:
   - "./README.md"
 ---
-<<<<<<< .merge_file_CeeV3B
-=======
-=======
->>>>>>> f6dc2a0 (.)
 # Indice della Documentazione - Modulo Media
 
 ## Panoramica
@@ -45,11 +40,7 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 ## Categorie Principali
 
 ### Architettura e Struttura
-<<<<<<< HEAD
 - [README](README.md) - Panoramica generale del modulo
-=======
-- [README](./readme.md) - Panoramica generale del modulo
->>>>>>> f6dc2a0 (.)
 - [Architettura](./architecture/readme.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./data-models.md) - Documentazione dei modelli Eloquent
@@ -97,7 +88,6 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 
 ### 1. Struttura del Modulo
 Il modulo Media segue una struttura standard con directory per modelli, servizi, provider e componenti Filament per garantire chiarezza e manutenibilità.
->>>>>>> .merge_file_qRk8Rm
 
 # Indice della Documentazione - Modulo Media
 

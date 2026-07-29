@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Rules Index"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "rules index"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Rules Index
 
 This module follows the global Laraxot coding standards.

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Checklist qualità - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "quality"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Checklist qualità - Media Module
 
 - [x] PHPStan Level 10

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Stream"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "stream"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 https://laravel-news.com/temporary-directory
 
 

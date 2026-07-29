@@ -1,30 +1,16 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 title: "Media Module - Product Roadmap"
 module: "Media"
 type: concept
 tags: [PRODUCT, ROADMAP]
-=======
-title: "Media - Product Roadmap"
-module: "Media"
-type: concept
-tags: [product, roadmap]
->>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product roadmap"
 related:
   - "./webm.md"
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Roadmap
-=======
 # Media Module - Product Roadmap
->>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Version:** 1.0.0  
@@ -127,9 +113,6 @@ To provide a **comprehensive media management system** that handles all image, v
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -176,4 +159,3 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Media**, che nel pro
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
->>>>>>> provtv/dev

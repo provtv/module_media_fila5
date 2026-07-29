@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione dei Conflitti Git nel Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "conflitti merge risolti"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Risoluzione dei Conflitti Git nel Modulo Media
 
 ## Panoramica

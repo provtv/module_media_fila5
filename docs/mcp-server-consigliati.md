@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Server MCP consigliati per il modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "mcp server consigliati"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Server MCP consigliati per il modulo Media
 
 ## Scopo del modulo

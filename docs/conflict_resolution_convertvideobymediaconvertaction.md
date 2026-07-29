@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti ConvertVideoByMediaConvertAction.php"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "conflict resolution convertvideobymediaconvertaction"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Risoluzione Conflitti ConvertVideoByMediaConvertAction.php
 
 ## Contesto del Conflitto

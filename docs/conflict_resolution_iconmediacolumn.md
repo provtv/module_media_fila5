@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitto IconMediaColumn.php"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "conflict resolution iconmediacolumn"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Risoluzione Conflitto IconMediaColumn.php
 
 ## Problema Identificato

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "structure"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Modulo Media
 
 Data: 2025-04-23 19:09:56

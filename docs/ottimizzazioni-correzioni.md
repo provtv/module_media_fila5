@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ottimizzazioni Correzioni"
 module: "Media"
@@ -10,6 +9,3 @@ qmd: "ottimizzazioni correzioni"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
-

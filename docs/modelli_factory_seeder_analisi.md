@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "modelli factory seeder analisi"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Analisi Modelli, Factory e Seeder - Modulo Media
 
 ## Panoramica

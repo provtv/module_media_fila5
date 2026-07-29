@@ -1,30 +1,16 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 title: "Media Module - Product Launch Plan"
 module: "Media"
 type: concept
 tags: [PRODUCT, LAUNCH, PLAN]
-=======
-title: "Media - Product Launch Plan"
-module: "Media"
-type: concept
-tags: [product, launch, plan]
->>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product launch plan"
 related:
   - "./webm.md"
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Launch Plan
-=======
 # Media Module - Product Launch Plan
->>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Version:** 1.0.0  
@@ -107,9 +93,6 @@ related:
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Launch Plan
 
 > Piano di lancio. Modulo.
@@ -166,4 +149,3 @@ Rilasciare **Media** in modo controllato, misurabile e coerente con il suo ruolo
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
->>>>>>> provtv/dev

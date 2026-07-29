@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Visione - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "vision"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Visione - Media Module
 
 Fornire un sistema universale e performante per:

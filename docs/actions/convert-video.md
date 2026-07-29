@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "ConvertVideoByConvertDataAction"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "convert video"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # ConvertVideoByConvertDataAction
 
 ## Panoramica
