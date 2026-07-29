@@ -246,13 +246,15 @@ class S3Test extends XotBasePage
             return;
         }
 
+        Assert::string($filePath);
+
         // Generate CloudFront signed URL for attachment
-        $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute((string) $filePath, 60);
+        $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute($filePath, 60);
         dddx([
             'signedurl' => $signedUrl,
             'filePath' => $filePath,
-            'url2' => Storage::disk('s3')->url((string) $filePath),
-            'url3' => Storage::disk('s3')->temporaryUrl((string) $filePath, now()->addMinutes(5)),
+            'url2' => Storage::disk('s3')->url($filePath),
+            'url3' => Storage::disk('s3')->temporaryUrl($filePath, now()->addMinutes(5)),
         ]);
         $this->debugResults = [];
         $this->updateDebugOutput();
@@ -265,11 +267,14 @@ class S3Test extends XotBasePage
      */
     private function buildConfigDebugData(): array
     {
+        $key = config('filesystems.disks.s3.key', '');
+        Assert::string($key);
+
         return [
             'title' => '📋 Configuration',
             'status' => 'info',
             'data' => [
-                'AWS_ACCESS_KEY_ID' => substr((string) config('filesystems.disks.s3.key', ''), 0, 8).'...',
+                'AWS_ACCESS_KEY_ID' => substr($key, 0, 8).'...',
                 'AWS_SECRET_ACCESS_KEY' => config('filesystems.disks.s3.secret') ? '✅ Present' : '❌ Missing',
                 'AWS_DEFAULT_REGION' => config('filesystems.disks.s3.region'),
                 'AWS_BUCKET' => config('filesystems.disks.s3.bucket'),
@@ -466,13 +471,15 @@ class S3Test extends XotBasePage
             ]);
 
             $policy = $s3->getBucketPolicy(['Bucket' => config('filesystems.disks.s3.bucket')]);
+            $policyJson = $policy['Policy'];
+            Assert::string($policyJson);
 
             return [
                 'title' => '📜 Bucket Policy',
                 'status' => 'info',
                 'data' => [
                     'Policy Exists' => '✅ Yes',
-                    'Policy' => json_encode(json_decode((string) $policy['Policy']), JSON_PRETTY_PRINT),
+                    'Policy' => json_encode(json_decode($policyJson), JSON_PRETTY_PRINT),
                 ],
             ];
         } catch (AwsException $e) {
@@ -588,8 +595,10 @@ class S3Test extends XotBasePage
                 continue;
             }
 
-            $title = (string) $result['title'];
-            $status = (string) $result['status'];
+            $title = $result['title'];
+            $status = $result['status'];
+            Assert::string($title);
+            Assert::string($status);
             $data = $result['data'];
 
             $output[] = "=== {$title} ===";
@@ -601,9 +610,10 @@ class S3Test extends XotBasePage
                     $keyStr = (string) $key;
                     if (is_array($value)) {
                         $output[] = "{$keyStr}: ".json_encode($value, JSON_PRETTY_PRINT);
-                    } else {
-                        $valueStr = (string) $value;
-                        $output[] = "{$keyStr}: {$valueStr}";
+                    } elseif (is_string($value) || is_int($value) || is_float($value) || is_bool($value) || $value === null) {
+                        $output[] = "{$keyStr}: ".$value;
+                    } elseif ($value instanceof \Stringable) {
+                        $output[] = "{$keyStr}: ".$value;
                     }
                 }
             }
@@ -637,8 +647,10 @@ class S3Test extends XotBasePage
                 return;
             }
 
+            Assert::string($filePath);
+
             // Generate CloudFront signed URL for attachment
-            $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute((string) $filePath, 60);
+            $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute($filePath, 60);
 
             // Log the email data for testing purposes (no actual email sent)
             Log::debug('S3 Test Email Data', [
@@ -780,11 +792,11 @@ class S3Test extends XotBasePage
                     'cloudfront_url' => $cloudFrontUrl,
                     'temporary_url' => $temporaryUrl,
                 ],
-                'uploaded_file' => $filePath
+                'uploaded_file' => is_string($filePath) && $filePath !== ''
                     ? [
-                        'path' => (string) $filePath,
-                        'cloudfront_url' => app(GetCloudFrontSignedUrlAction::class)->execute((string) $filePath, 30),
-                        'temporary_url' => $s3Disk->temporaryUrl((string) $filePath, now()->addMinutes(30)),
+                        'path' => $filePath,
+                        'cloudfront_url' => app(GetCloudFrontSignedUrlAction::class)->execute($filePath, 30),
+                        'temporary_url' => $s3Disk->temporaryUrl($filePath, now()->addMinutes(30)),
                     ] : null,
             ];
 

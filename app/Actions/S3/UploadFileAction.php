@@ -6,6 +6,7 @@ namespace Modules\Media\Actions\S3;
 
 use Aws\S3\ObjectUploader;
 use Exception;
+use Webmozart\Assert\Assert;
 
 use function Safe\fclose;
 use function Safe\filesize;
@@ -52,13 +53,16 @@ class UploadFileAction extends BaseS3Action
 
             $uploadOptions = array_merge($defaultOptions, $options);
 
+            $acl = $uploadOptions['ACL'] ?? 'private';
+            Assert::string($acl);
+
             // Use ObjectUploader with proper type casting
             $uploader = new ObjectUploader(
                 $this->s3Client,
                 $this->bucketName,
                 $destinationFilePath,
                 $sourceFile,
-                (string) ($uploadOptions['ACL'] ?? 'private'),
+                $acl,
                 $uploadOptions,
             );
 

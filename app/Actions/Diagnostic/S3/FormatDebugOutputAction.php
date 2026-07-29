@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Media\Actions\Diagnostic\S3;
 
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
@@ -41,9 +42,14 @@ class FormatDebugOutputAction
             return [];
         }
 
+        $title = $result['title'];
+        $status = $result['status'];
+        Assert::string($title);
+        Assert::string($status);
+
         $lines = [
-            '=== '.(string) $result['title'].' ===',
-            'Status: '.(string) $result['status'],
+            '=== '.$title.' ===',
+            'Status: '.$status,
             '',
         ];
 
@@ -78,6 +84,12 @@ class FormatDebugOutputAction
             return $key.': '.json_encode($value, JSON_PRETTY_PRINT);
         }
 
-        return $key.': '.(string) $value;
+        if (is_string($value) || is_int($value) || is_float($value) || is_bool($value) || $value === null) {
+            return $key.': '.(string) $value;
+        }
+
+        Assert::isInstanceOf($value, \Stringable::class);
+
+        return $key.': '.$value;
     }
 }
