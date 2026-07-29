@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Configurazione della Sicurezza"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "security"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.

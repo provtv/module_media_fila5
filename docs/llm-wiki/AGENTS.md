@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Media {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "agents"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Media {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Media

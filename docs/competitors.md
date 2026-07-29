@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Competitors"
 module: "Media"
@@ -10,6 +9,4 @@ qmd: "competitors"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 https://github.com/outer-web/filament-image-library

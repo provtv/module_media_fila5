@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 module: theme
 topic: __stream
 canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # __stream
-=======
->>>>>>> 11477b67d (.)
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
 title: "__stream"
 module: "Media"
 type: concept
@@ -24,8 +16,6 @@ qmd: " stream"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # __stream
 
 <!-- Contenuto migrato da _docs/__stream.txt -->
@@ -53,4 +43,3 @@ Http::sink($tmpPath)->throw()->get($videoUrl->toString());
 $tmpFile->delete();
 
 ----------------------------------------------------------------------------
->>>>>>> provtv/dev

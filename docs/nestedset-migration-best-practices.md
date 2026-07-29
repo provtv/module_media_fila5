@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "NestedSet Migration Best Practices - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "nestedset migration best practices"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # NestedSet Migration Best Practices - Media Module
 
 ## Overview

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Quality Analysis Report - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "quality"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Quality Analysis Report - Media Module
 **Date**: [DATE]
 **Status**: ✅ **ILLUMINATED** - PHPStan Level 10 PASS

@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 module: theme
 topic: _competitors
 canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # _competitors
-=======
->>>>>>> 11477b67d (.)
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
 title: "_competitors"
 module: "Media"
 type: concept
@@ -24,11 +16,8 @@ qmd: " competitors"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # _competitors
 
 <!-- Contenuto migrato da _docs/_competitors.txt -->
 
 https://github.com/outer-web/filament-image-library
->>>>>>> provtv/dev

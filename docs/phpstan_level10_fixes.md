@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan Livello 10 - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "phpstan level10 fixes"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Correzioni PHPStan Livello 10 - Modulo Media
 
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).

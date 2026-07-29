@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Aws"
 module: "Media"
@@ -10,7 +9,4 @@ qmd: "aws"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 https://github.com/kefabean/lambda-transcoder/blob/master/transcoder/transcode.js
-

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fasi di sviluppo - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "phases"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Fasi di sviluppo - Media Module
 
 ## Fase 1: Infrastruttura Core (Completata)

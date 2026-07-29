@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Media Chaos Readiness - 2026-03-02"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "chaos readiness"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Media Chaos Readiness - 2026-03-02
 
 ## Scope

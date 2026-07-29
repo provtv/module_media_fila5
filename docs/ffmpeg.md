@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ffmpeg"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "ffmpeg"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 WINDOWS
 
 https://www.gyan.dev/ffmpeg/builds/

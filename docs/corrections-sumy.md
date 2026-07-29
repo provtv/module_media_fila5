@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Riepilogo Correzioni S3Test.php - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "corrections sumy"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Riepilogo Correzioni S3Test.php - Modulo Media
 
 ## 🎯 **Obiettivo Completato**

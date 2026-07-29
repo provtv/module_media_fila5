@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Version Declaration — Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "filament version"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Filament Version Declaration — Media
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

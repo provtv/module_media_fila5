@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> provtv/dev
 ---
 title: "PRD: Media Module"
 module: "Media"
@@ -14,13 +9,6 @@ qmd: "prd"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
-<<<<<<< HEAD
-=======
->>>>>>> 11477b67d (.)
-=======
->>>>>>> provtv/dev
 # PRD: Media Module
 
 ## 📋 Overview

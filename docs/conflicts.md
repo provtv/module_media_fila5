@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti - Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "conflicts"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Risoluzione Conflitti - Media
 
 ## File modificati

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Laravel-FFMpeg – API Reference Completa"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "laravel ffmpeg api reference"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Laravel-FFMpeg – API Reference Completa
 
 > Package: `protonemedia/laravel-ffmpeg` v8+

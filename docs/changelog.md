@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> provtv/dev
 ---
 title: "Changelog"
 module: "Media"
@@ -14,13 +9,6 @@ qmd: "changelog"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
-<<<<<<< HEAD
-=======
->>>>>>> 11477b67d (.)
-=======
->>>>>>> provtv/dev
 # Changelog
 
 All notable changes to this project will be documented in this file.

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Compliance - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "phpstan compliance"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # PHPStan Compliance - Media Module
 
 ## Status: ✅ FULLY COMPLIANT

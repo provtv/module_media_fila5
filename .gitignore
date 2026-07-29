@@ -139,31 +139,19 @@ laravel
 public_html
 lang/lang/
 agentdb.rvf
-<<<<<<< .merge_file_oiHh6h
 .vscode/
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
 .cursor/
-=======
-<<<<<<< HEAD
-docs/archive/
->>>>>>> .merge_file_WowRgX
 .devcontainer/
 .vscode/
 .windsurf/
 tests/AuditCoverage/
 
-<<<<<<< .merge_file_oiHh6h
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
 phpstan*
-=======
-# Local vector DB (agent tooling)
-ruvector.db
-=======
->>>>>>> f6dc2a0 (.)
->>>>>>> .merge_file_WowRgX
 docs/**/*-[0-9].md

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Roadmap overview (Module Media)"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "00 overview"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Roadmap overview (Module Media)
 
 ## Scope

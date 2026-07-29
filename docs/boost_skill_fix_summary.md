@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Boost Skill Fix Summary - Media Module"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "boost skill fix summary"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Boost Skill Fix Summary - Media Module
 
 **Date**: 2026-03-02  
@@ -65,4 +62,3 @@ Critical dependencies for Media module:
    - Filesystem needs framework
    - Storage needs config
    - Cannot operate in isolation
-

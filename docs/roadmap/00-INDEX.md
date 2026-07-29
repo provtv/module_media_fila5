@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Media Module - Roadmap"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "00 index"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Media Module - Roadmap
 
 > Sistema universale per gestione, trasformazione e ottimizzazione file multimediali.

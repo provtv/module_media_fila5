@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Workstreams - Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "03 workstreams"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Workstreams - Media
 
 ## WS1 Architecture

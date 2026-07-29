@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ponytail audit — Media"
 module: "Media"
@@ -19,15 +18,3 @@ related:
 - [Findings Media](../../ponytail-audit-over-engineering.md)
 
 Aggiornare solo finding e stato specifici di questo modulo.
-=======
-# Ponytail audit — Media
-
-**Run:** 2026-06-30
-
-Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
-
-## Findings
-
-- `BaseController` vuoto (zero extends)
-- valutare `intervention/image` vs GD/Imagick
->>>>>>> f6dc2a0 (.)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Colli di Bottiglia e Soluzioni - Modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "bottlenecks"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Colli di Bottiglia e Soluzioni - Modulo Media
 
 ## Panoramica

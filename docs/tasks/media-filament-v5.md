@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Media Filament v5 Alignment (Clusters)"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "media filament v5"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Task: Media Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

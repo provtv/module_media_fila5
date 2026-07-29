@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament 5.x compatibility - modulo Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "filament 5x compatibility"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Filament 5.x compatibility - modulo Media
 
 **Versione Filament:** v5.2.1

@@ -1,30 +1,16 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 title: "Media Module - Product Strategy"
 module: "Media"
 type: concept
 tags: [PRODUCT, STRATEGY]
-=======
-title: "Media - Product Strategy"
-module: "Media"
-type: concept
-tags: [product, strategy]
->>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product strategy"
 related:
   - "./webm.md"
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Strategy
-=======
 # Media Module - Product Strategy
->>>>>>> 11477b67d (.)
 
 **Module:** Media  
 **Version:** 1.0.0  
@@ -116,9 +102,6 @@ Easy media management.
 ---
 
 *Last Updated: March 12, 2026*
-=======
-=======
->>>>>>> f6dc2a0 (.)
 # Media - Product Strategy
 
 > Strategia prodotto. Modulo.
@@ -172,4 +155,3 @@ Portare **Media** a uno stato in cui il progetto ottiene un vantaggio netto e mi
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
->>>>>>> provtv/dev

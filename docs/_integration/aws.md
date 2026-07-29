@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "aws"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "aws"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # aws
 
 <!-- Contenuto migrato da _docs/aws.txt -->

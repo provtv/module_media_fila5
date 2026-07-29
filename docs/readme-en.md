@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🖼️ Media — English presentation"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "readme en"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # 🖼️ Media — English presentation
 
 [![Domain-Media](https://img.shields.io/badge/Domain-Media%20Library-AD1457.svg)](#)

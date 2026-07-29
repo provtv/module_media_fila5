@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "rules testing no migrate fresh"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

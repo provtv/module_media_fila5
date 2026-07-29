@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Media Module - Product Roadmap"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "product roadmap"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Media Module - Product Roadmap
 
 **Module:** Media  

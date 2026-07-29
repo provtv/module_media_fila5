@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PathGenerator Interface"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "path generator"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # PathGenerator Interface
 
 ## Descrizione

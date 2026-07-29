@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Media Module Test Coverage"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "coverage"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Media Module Test Coverage
 
 ## Coverage Results
@@ -72,5 +69,3 @@ PY
 
 - The Media module test suite is now stable and reflects the actual runtime schema.
 - Coverage is currently 0% because the executed tests do not hit code paths under `Modules/Media/app` that are counted as executable statements by the coverage driver.
-
-

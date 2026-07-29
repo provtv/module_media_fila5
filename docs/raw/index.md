@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Raw Sources — Media"
 module: "Media"
@@ -10,8 +9,6 @@ qmd: "index"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # Raw Sources — Media
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

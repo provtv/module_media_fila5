@@ -1,17 +1,10 @@
-<<<<<<< HEAD
 ---
-<<<<<<< HEAD
 module: Media
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
 ---
-<<<<<<< HEAD
-=======
->>>>>>> f6dc2a0 (.)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
-=======
->>>>>>> 11477b67d (.)
 
 # Metodi Duplicati — Analisi Media
 
@@ -440,7 +433,6 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-=======
 title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: "Media"
 type: concept
@@ -451,8 +443,6 @@ qmd: "metodi duplicati analisi"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -990,4 +980,3 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> provtv/dev

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Module Media Root Symlink"
 module: "Media"
@@ -10,6 +9,4 @@ qmd: "module media root symlink"
 related:
   - "./webm.md"
 ---
-=======
->>>>>>> f6dc2a0 (.)
 module_media.md
