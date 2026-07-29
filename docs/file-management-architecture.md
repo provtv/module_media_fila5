@@ -3,7 +3,11 @@
 title: "Media Module - File Management Architecture"
 module: "Media"
 type: concept
+<<<<<<< HEAD
 tags: [FILE, MANAGEMENT, ARCHITECTURE]
+=======
+tags: [file, management, architecture]
+>>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "file management architecture"

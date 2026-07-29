@@ -260,17 +260,23 @@ private function getSolutionForError(?string $errorCode): string
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> provtv/dev
 - [Documentazione Generale Media](README.md)
 =======
 - [Documentazione Generale Media](../readme.md)
 >>>>>>> f6dc2a0 (.)
 - [Best Practice Traduzioni](../../../../docs/translation-standards.md)
 - [Convenzioni Laraxot](../../../../docs/laraxot_conventions.md)
+<<<<<<< HEAD
 =======
 - [Documentazione Generale Media](../README.md)
 - [Best Practice Traduzioni](../../../docs/translation-standards.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 >>>>>>> 11477b67d (.)
+=======
+>>>>>>> provtv/dev
 - [PHPStan Level 10 Fixes](./phpstan_level10_fixes.md)
 
 ---

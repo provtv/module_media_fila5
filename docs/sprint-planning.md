@@ -1,15 +1,23 @@
 <<<<<<< HEAD
 ---
+<<<<<<< HEAD
 title: "Media Module - Sprint Planning"
 module: "Media"
 type: concept
 tags: [SPRINT, PLANNING]
+=======
+title: "Sprint Planning: Media Module"
+module: "Media"
+type: concept
+tags: [sprint, planning]
+>>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sprint planning"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f6dc2a0 (.)
@@ -84,3 +92,11 @@ Implement core media upload and storage system with basic transformations.
 ---
 
 *Last Updated: March 12, 2026*
+=======
+=======
+>>>>>>> f6dc2a0 (.)
+# Sprint Planning: Media Module
+
+## 🏁 Sprint Goal
+Finalize documentation and validation for Media.
+>>>>>>> provtv/dev

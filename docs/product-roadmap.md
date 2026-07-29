@@ -1,15 +1,23 @@
 <<<<<<< HEAD
 ---
+<<<<<<< HEAD
 title: "Media Module - Product Roadmap"
 module: "Media"
 type: concept
 tags: [PRODUCT, ROADMAP]
+=======
+title: "Media - Product Roadmap"
+module: "Media"
+type: concept
+tags: [product, roadmap]
+>>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product roadmap"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f6dc2a0 (.)
@@ -119,3 +127,53 @@ To provide a **comprehensive media management system** that handles all image, v
 ---
 
 *Last Updated: March 12, 2026*
+=======
+=======
+>>>>>>> f6dc2a0 (.)
+# Media - Product Roadmap
+
+> Documento vivente. Modulo.
+> Maturita' stimata: 63% implementato, 37% gap residuo.
+
+## Visione di avanzamento
+
+Questo roadmap traduce il PRD in sequenza di rilascio per **Media**, che nel progetto copre: gestione asset, file e media associati ai modelli.
+
+## Orizzonte 0-30 giorni
+
+- chiudere i gap P0 descritti in [PRD](prd.md)
+- riallineare codice, test e documentazione
+- rimuovere le ambiguita' tra stato reale e stato percepito
+
+## Orizzonte 30-90 giorni
+
+- consolidare test, osservabilita' e metriche
+- completare le superfici utente o admin critiche
+- ridurre le dipendenze manuali o i fallback fragili
+
+## Orizzonte 90-180 giorni
+
+- estendere le capacita' avanzate solo dopo convergenza del core
+- migliorare UX, automazioni e operativita'
+
+## Milestone
+
+### M1 - Convergenza Core
+- focus: contratto funzionale minimo affidabile
+- target completamento: 80%
+
+### M2 - Superfici Vere
+- focus: UI, API e processi allineati al backend reale
+- target completamento: 90%
+
+### M3 - Eccellenza Operativa
+- focus: qualita', osservabilita', performance e governance
+- target completamento: 95%+
+
+## Dipendenze
+
+- [PRD](prd.md)
+- [Product Strategy](product-strategy.md)
+- [Sprint Planning Meeting](sprint-planning-meeting.md)
+- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+>>>>>>> provtv/dev

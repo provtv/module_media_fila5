@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Media {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Media"
 type: concept
@@ -9,6 +10,20 @@ qmd: "agents"
 related:
   - "./webm.md"
 ---
+=======
+title: "Agent instructions"
+type: reference
+tags: [agents, coding-agent, llm-wiki]
+created: 2026-07-01
+updated: 2026-07-01
+qmd: "istruzioni agenti LLM wiki modulo"
+issues: []
+discussions: []
+related:
+  - ./coding-agent-manifests.md
+---
+
+>>>>>>> provtv/dev
 # Media {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Media

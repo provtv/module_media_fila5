@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Documentation Index — Media Module"
 module: "Media"
@@ -126,3 +127,12 @@ last_updated: 2026-07-28
 ---
 
 **Navigation:** [Home](../README.md) | [Contributing](./CONTRIBUTING.md) | [Troubleshooting](./TROUBLESHOOTING.md)
+=======
+# Documentation Index
+
+Modulo: Media
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
+>>>>>>> provtv/dev

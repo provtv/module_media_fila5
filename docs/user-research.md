@@ -1,15 +1,23 @@
 <<<<<<< HEAD
 ---
+<<<<<<< HEAD
 title: "Media Module - User Research"
 module: "Media"
 type: concept
 tags: [USER, RESEARCH]
+=======
+title: "User Research: Media Module"
+module: "Media"
+type: concept
+tags: [user, research]
+>>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "user research"
 related:
   - "./webm.md"
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f6dc2a0 (.)
@@ -104,3 +112,11 @@ Majority of uploads from mobile.
 ---
 
 *Last Updated: March 12, 2026*
+=======
+=======
+>>>>>>> f6dc2a0 (.)
+# User Research: Media Module
+
+## 🔬 Research Goals
+Identify user needs for Media functionality.
+>>>>>>> provtv/dev

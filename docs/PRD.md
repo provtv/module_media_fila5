@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> provtv/dev
----
-title: "PRD: Media Module"
-module: "Media"
-type: concept
-tags: [prd]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "prd"
-related:
-  - "./webm.md"
----
-=======
->>>>>>> f6dc2a0 (.)
-<<<<<<< HEAD
-=======
->>>>>>> 11477b67d (.)
-=======
->>>>>>> provtv/dev
 # PRD: Media Module
 
 ## 📋 Overview

@@ -91,6 +91,11 @@ Il file `Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php` presenta
 
 - [module_media.md](module_media.md)
 - [filament_table_actions.md](filament_table_actions.md)
+<<<<<<< HEAD
 - [Modules/Media/docs/](../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
+=======
+- [Modules/Media/docs/](../../docs/)
+
+>>>>>>> provtv/dev
