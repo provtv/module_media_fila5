@@ -5,107 +5,109 @@ declare(strict_types=1);
 namespace Modules\Media\Tests\Unit\Models;
 
 use Modules\Media\Models\Media;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
 use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
 
-uses(\Modules\Media\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Media Model', function (): void {
     it('extends SpatieMedia', function (): void {
-        expect(new Media)->toBeInstanceOf(SpatieMedia::class);
+        Assert::assertInstanceOf(SpatieMedia::class, new Media);
     });
 
     it('uses HasXotFactory trait', function (): void {
         $traits = class_uses_recursive(Media::class);
 
-        expect(in_array('Modules\Xot\Models\Traits\HasXotFactory', $traits, true))->toBeTrue();
+        Assert::assertContains('Modules\Xot\Models\Traits\HasXotFactory', $traits);
     });
 
     it('uses Updater trait', function (): void {
         $traits = class_uses_recursive(Media::class);
 
-        expect(in_array('Modules\Xot\Traits\Updater', $traits, true))->toBeTrue();
+        Assert::assertTrue(in_array('Modules\Xot\Traits\Updater', $traits, true));
     });
 
     it('has media connection', function (): void {
         $model = new Media;
 
-        expect($model->getConnectionName())->toBe('media');
+        Assert::assertSame('media', $model->getConnectionName());
     });
 
     it('has findWithTemporaryUploadInCurrentSession static method', function (): void {
-        expect((new \ReflectionClass(Media::class))->hasMethod('findWithTemporaryUploadInCurrentSession'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass(Media::class))->hasMethod('findWithTemporaryUploadInCurrentSession'));
     });
 
     it('has temporaryUpload relationship', function (): void {
         $model = new Media;
 
-        expect((new \ReflectionClass($model))->hasMethod('temporaryUpload'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass($model))->hasMethod('temporaryUpload'));
     });
 
     it('has creator relationship', function (): void {
         $model = new Media;
 
-        expect((new \ReflectionClass($model))->hasMethod('creator'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass($model))->hasMethod('creator'));
     });
 
     it('has mediaConverts relationship', function (): void {
         $model = new Media;
 
-        expect((new \ReflectionClass($model))->hasMethod('mediaConverts'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass($model))->hasMethod('mediaConverts'));
     });
 
     it('has getUrlConv method', function (): void {
-        expect((new \ReflectionClass(Media::class))->hasMethod('getUrlConv'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass(Media::class))->hasMethod('getUrlConv'));
     });
 
     it('has getEntryConversionsAttribute accessor', function (): void {
-        expect((new \ReflectionClass(Media::class))->hasMethod('getEntryConversionsAttribute'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass(Media::class))->hasMethod('getEntryConversionsAttribute'));
     });
 
     it('casts id to string', function (): void {
         $model = new Media;
 
         $casts = $model->getCasts();
-        expect($casts['id'] ?? null)->toBe('string');
+        Assert::assertSame('string', $casts['id'] ?? null);
     });
 
     it('casts uuid to string', function (): void {
         $model = new Media;
 
         $casts = $model->getCasts();
-        expect($casts['uuid'] ?? null)->toBe('string');
+        Assert::assertSame('string', $casts['uuid'] ?? null);
     });
 
     it('casts datetime fields', function (): void {
         $model = new Media;
 
         $casts = $model->getCasts();
-        expect($casts['created_at'] ?? null)->toBe('datetime');
-        expect($casts['updated_at'] ?? null)->toBe('datetime');
-        expect($casts['deleted_at'] ?? null)->toBe('datetime');
+        Assert::assertSame('datetime', $casts['created_at'] ?? null);
+        Assert::assertSame('datetime', $casts['updated_at'] ?? null);
+        Assert::assertSame('datetime', $casts['deleted_at'] ?? null);
     });
 
     it('casts user fields to string', function (): void {
         $model = new Media;
 
         $casts = $model->getCasts();
-        expect($casts['updated_by'] ?? null)->toBe('string');
-        expect($casts['created_by'] ?? null)->toBe('string');
-        expect($casts['deleted_by'] ?? null)->toBe('string');
+        Assert::assertSame('string', $casts['updated_by'] ?? null);
+        Assert::assertSame('string', $casts['created_by'] ?? null);
+        Assert::assertSame('string', $casts['deleted_by'] ?? null);
     });
 
     it('casts array fields', function (): void {
         $model = new Media;
 
         $casts = $model->getCasts();
-        expect($casts['manipulations'] ?? null)->toBe('array');
-        expect($casts['custom_properties'] ?? null)->toBe('array');
-        expect($casts['generated_conversions'] ?? null)->toBe('array');
-        expect($casts['responsive_images'] ?? null)->toBe('array');
+        Assert::assertSame('array', $casts['manipulations'] ?? null);
+        Assert::assertSame('array', $casts['custom_properties'] ?? null);
+        Assert::assertSame('array', $casts['generated_conversions'] ?? null);
+        Assert::assertSame('array', $casts['responsive_images'] ?? null);
     });
 
     it('has entry_conversions attribute', function (): void {
         // entry_conversions is a dynamic attribute from getEntryConversionsAttribute accessor
-        expect((new \ReflectionClass(Media::class))->hasMethod('getEntryConversionsAttribute'))->toBeTrue();
+        Assert::assertTrue((new \ReflectionClass(Media::class))->hasMethod('getEntryConversionsAttribute'));
     });
 });

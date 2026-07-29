@@ -15,6 +15,9 @@ use Modules\Media\Models\MediaConvert;
 use Modules\Media\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+require_once dirname(__DIR__).'/Pest.php';
 
 uses(TestCase::class);
 
@@ -83,7 +86,7 @@ describe('Media Business Logic', function () {
         }
 
         if (in_array('size', $mediaColumns, true) && in_array('file_size', $temporaryColumns, true)) {
-            $mediaPayload['size'] = (int) $temporaryUpload->file_size;
+            $mediaPayload['size'] = mediaIntegerish($temporaryUpload->file_size);
         }
 
         if ($user instanceof User && in_array('user_id', $mediaColumns, true)) {
@@ -92,15 +95,12 @@ describe('Media Business Logic', function () {
 
         $media = MediaFactory::new()->createOne($mediaPayload);
 
-        expect($media)
-            ->toBeInstanceOf(Media::class)
-            ->and($media->file_name)
-            ->toBe($mediaPayload['file_name'])
-            ->and($media->mime_type)
-            ->toBe($mediaPayload['mime_type']);
+        Assert::assertInstanceOf(Media::class, $media);
+        Assert::assertSame($mediaPayload['file_name'], $media->file_name);
+        Assert::assertSame($mediaPayload['mime_type'], $media->mime_type);
 
         assertMediaTableHas('media', [
-            'id' => (int) $media->getKey(),
+            'id' => mediaIntegerish($media->getKey()),
             'file_name' => $mediaPayload['file_name'],
             'mime_type' => $mediaPayload['mime_type'],
         ]);
@@ -112,7 +112,7 @@ describe('Media Business Logic', function () {
 
         foreach (['media_id', 'original_format', 'target_format', 'status'] as $requiredColumn) {
             if (! in_array($requiredColumn, $convertColumns, true)) {
-                $this->skipTest('media_converts table is missing required columns for this test in this install.');
+                Assert::markTestSkipped('media_converts table is missing required columns for this test in this install.');
             }
         }
 
@@ -135,18 +135,14 @@ describe('Media Business Logic', function () {
             'status' => 'pending',
         ]);
 
-        expect($mediaConvert)
-            ->toBeInstanceOf(MediaConvert::class)
-            ->and($mediaConvert->media_id)
-            ->toBe($media->id)
-            ->and($mediaConvert->getAttribute('original_format'))
-            ->toBe('jpeg')
-            ->and($mediaConvert->getAttribute('target_format'))
-            ->toBe('png');
+        Assert::assertInstanceOf(MediaConvert::class, $mediaConvert);
+        Assert::assertEquals($media->id, $mediaConvert->media_id);
+        Assert::assertSame('jpeg', $mediaConvert->getAttribute('original_format'));
+        Assert::assertSame('png', $mediaConvert->getAttribute('target_format'));
 
         assertMediaTableHas('media_converts', [
-            'id' => (int) $mediaConvert->getKey(),
-            'media_id' => (int) $media->getKey(),
+            'id' => mediaIntegerish($mediaConvert->getKey()),
+            'media_id' => mediaIntegerish($media->getKey()),
             'original_format' => 'jpeg',
             'target_format' => 'png',
             'status' => 'pending',
@@ -190,11 +186,11 @@ describe('Media Business Logic', function () {
 
         $temporaryUpload->update(['status' => 'completed']);
 
-        expect($temporaryUpload->fresh()?->getAttribute('status'))->toBe('completed');
+        Assert::assertSame('completed', $temporaryUpload->fresh()?->getAttribute('status'));
 
         /** @var array<string, mixed> $expected */
         $expected = [
-            'id' => (int) $temporaryUpload->getKey(),
+            'id' => mediaIntegerish($temporaryUpload->getKey()),
             'status' => 'completed',
         ];
 
@@ -230,18 +226,16 @@ describe('Media Business Logic', function () {
 
         $documentMedia = MediaFactory::new()->createOne($documentPayload);
 
-        expect($profileMedia->collection_name)
-            ->toBe('profile')
-            ->and($documentMedia->collection_name)
-            ->toBe('documents');
+        Assert::assertSame('profile', $profileMedia->collection_name);
+        Assert::assertSame('documents', $documentMedia->collection_name);
 
         assertMediaTableHas('media', [
-            'id' => (int) $profileMedia->getKey(),
+            'id' => mediaIntegerish($profileMedia->getKey()),
             'collection_name' => 'profile',
         ]);
 
         assertMediaTableHas('media', [
-            'id' => (int) $documentMedia->getKey(),
+            'id' => mediaIntegerish($documentMedia->getKey()),
             'collection_name' => 'documents',
         ]);
     });
@@ -265,7 +259,7 @@ describe('Media Business Logic', function () {
         $validImage = MediaFactory::new()->createOne($imagePayload);
 
         $imageMime = (string) ($validImage->mime_type ?? '');
-        expect($imageMime)->toStartWith('image/');
+        Assert::assertStringStartsWith('image/', $imageMime);
 
         /** @var array<string, mixed> $documentPayload */
         $documentPayload = [
@@ -280,7 +274,7 @@ describe('Media Business Logic', function () {
         $validDocument = MediaFactory::new()->createOne($documentPayload);
 
         $docMime = (string) ($validDocument->mime_type ?? '');
-        expect($docMime)->toStartWith('application/');
+        Assert::assertStringStartsWith('application/', $docMime);
     });
 
     it('can track media conversion status', function (): void {
@@ -288,7 +282,7 @@ describe('Media Business Logic', function () {
         $convertColumns = Schema::connection('media')->getColumnListing('media_converts');
 
         if (! in_array('status', $convertColumns, true) || ! in_array('media_id', $convertColumns, true)) {
-            $this->skipTest('media_converts table is missing required columns for this test in this install.');
+            Assert::markTestSkipped('media_converts table is missing required columns for this test in this install.');
         }
 
         /** @var array<string, mixed> $payload */
@@ -311,10 +305,10 @@ describe('Media Business Logic', function () {
         $mediaConvert->update(['status' => 'processing']);
         $mediaConvert->update(['status' => 'completed']);
 
-        expect($mediaConvert->fresh()?->getAttribute('status'))->toBe('completed');
+        Assert::assertSame('completed', $mediaConvert->fresh()?->getAttribute('status'));
 
         assertMediaTableHas('media_converts', [
-            'id' => (int) $mediaConvert->getKey(),
+            'id' => mediaIntegerish($mediaConvert->getKey()),
             'status' => 'completed',
         ]);
     });
@@ -325,7 +319,7 @@ describe('Media Business Logic', function () {
 
         $columns = Schema::connection('media')->getColumnListing('media');
         if (! in_array('user_id', $columns, true) || ! in_array('is_public', $columns, true)) {
-            $this->skipTest('This install does not have user_id/is_public columns on media table.');
+            Assert::markTestSkipped('This install does not have user_id/is_public columns on media table.');
         }
 
         $media = MediaFactory::new()->createOne([
@@ -333,23 +327,20 @@ describe('Media Business Logic', function () {
             'is_public' => false,
         ]);
 
-        expect($media->user_id)
-            ->toBe($owner->id)
-            ->and($media->getAttribute('is_public'))
-            ->toBeFalse()
-            ->and($media->user_id)
-            ->not->toBe($otherUser->id);
+        Assert::assertEquals($owner->id, $media->user_id);
+        Assert::assertFalse((bool) $media->getAttribute('is_public'));
+        Assert::assertNotEquals($otherUser->id, $media->user_id);
     });
 
     it('can handle media deletion', function (): void {
         $columns = Schema::connection('media')->getColumnListing('media');
 
         if (in_array('deleted_at', $columns, true)) {
-            $this->skipTest('This install has deleted_at on media table; deletion semantics are install-specific.');
+            Assert::markTestSkipped('This install has deleted_at on media table; deletion semantics are install-specific.');
         }
 
         $media = MediaFactory::new()->createOne();
-        $mediaId = (int) $media->getKey();
+        $mediaId = mediaIntegerish($media->getKey());
 
         $media->delete();
 
@@ -366,7 +357,8 @@ describe('Media Business Logic', function () {
 
         $url = $media->getUrl();
 
-        expect($url)->not->toBeEmpty()->and($url)->toContain('test-image.jpg');
+        Assert::assertNotEmpty($url);
+        Assert::assertStringContainsString('test-image.jpg', $url);
     });
 
     it('can validate file size limits', function (): void {
@@ -390,16 +382,16 @@ describe('Media Business Logic', function () {
 
         $validPayload = $makePayload(1024 * 1024);
         if ($validPayload === []) {
-            $this->skipTest('Unable to build minimal payload for media table in this install.');
+            Assert::markTestSkipped('Unable to build minimal payload for media table in this install.');
         }
 
         $validMedia = Media::query()->create($validPayload);
-        $sizeValue = (int) ($validMedia->getAttribute('file_size') ?? $validMedia->getAttribute('size') ?? 0);
-        expect($sizeValue)->toBeLessThanOrEqual(10 * 1024 * 1024);
+        $sizeValue = mediaIntegerish($validMedia->getAttribute('file_size') ?? $validMedia->getAttribute('size') ?? 0);
+        Assert::assertLessThanOrEqual(10 * 1024 * 1024, $sizeValue);
 
         $largeMedia = Media::query()->create($makePayload(15 * 1024 * 1024));
-        $largeSizeValue = (int) ($largeMedia->getAttribute('file_size') ?? $largeMedia->getAttribute('size') ?? 0);
-        expect($largeSizeValue)->toBeGreaterThan(10 * 1024 * 1024);
+        $largeSizeValue = mediaIntegerish($largeMedia->getAttribute('file_size') ?? $largeMedia->getAttribute('size') ?? 0);
+        Assert::assertGreaterThan(10 * 1024 * 1024, $largeSizeValue);
     });
 
     it('can track media usage statistics', function (): void {
@@ -431,13 +423,15 @@ describe('Media Business Logic', function () {
 
         $mediaColumns = Schema::connection('media')->getColumnListing('media');
         if (! in_array('user_id', $mediaColumns, true)) {
-            $this->skipTest('This install does not have user_id column on media table.');
+            Assert::markTestSkipped('This install does not have user_id column on media table.');
         }
 
         $totalMedia = Media::where('user_id', $user->id)->count();
         $imageCount = Media::where('user_id', $user->id)->where('mime_type', 'like', 'image/%')->count();
         $documentCount = Media::where('user_id', $user->id)->where('mime_type', 'like', 'application/%')->count();
 
-        expect($totalMedia)->toBe(8)->and($imageCount)->toBe(5)->and($documentCount)->toBe(3);
+        Assert::assertSame(8, $totalMedia);
+        Assert::assertSame(5, $imageCount);
+        Assert::assertSame(3, $documentCount);
     });
 });

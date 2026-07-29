@@ -8,6 +8,9 @@ use Modules\Media\Database\Factories\MediaFactory;
 use Modules\Media\Models\Media;
 use Modules\Media\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Webmozart\Assert\Assert as WebmozartAssert;
+
+require_once dirname(__DIR__, 2).'/Pest.php';
 
 uses(TestCase::class);
 
@@ -24,9 +27,11 @@ test('can create media with minimal data', function (): void {
 
     Assert::assertInstanceOf(Media::class, $media);
 
-    /** @var TestCase $this */
-    $this->assertMediaTableHas('media', [
-        'id' => (int) $media->getKey(),
+    $key = $media->getKey();
+    WebmozartAssert::integerish($key);
+
+    assertMediaTableHas('media', [
+        'id' => (int) $key,
         'collection_name' => 'avatars',
         'name' => 'test-image',
         'file_name' => 'test-image.jpg',

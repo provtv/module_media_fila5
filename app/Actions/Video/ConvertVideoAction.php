@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Media\Actions\Video;
+
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
