@@ -83,7 +83,7 @@ class AddAttachmentAction extends XotBaseAction
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public static function formHandlerCallback(RelationManager $livewire, array $data): void
     {
